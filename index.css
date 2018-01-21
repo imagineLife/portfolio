@@ -588,6 +588,10 @@ section:nth-child(even) {
   line-height: 1;
 }
 
+a {
+  text-decoration: none;
+}
+
 p{
   margin: 0 5%;
 }
@@ -597,6 +601,9 @@ p{
   margin-bottom: 10px;
 }
 
+.linkImg{
+  height:40px;
+}
 /* Non-mobile, grid */
 @media only screen and (min-width: 640px) {
 

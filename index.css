@@ -613,6 +613,7 @@ p{
 .techImg{
   max-width: 50px;
   max-height: 50px;
+  margin: 0 10px;
 }
 /* Non-mobile, grid */
 @media only screen and (min-width: 640px) {

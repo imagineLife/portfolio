@@ -606,8 +606,15 @@ p{
   margin-bottom: 10px;
 }
 
+.linksWrapper a{
+  display: inline-block;
+  width: 45%;
+}
+
 .linkImg{
   height:40px;
+  display: block;
+  margin: 0 auto;
 }
 
 .techImg{

@@ -609,6 +609,11 @@ p{
 .linkImg{
   height:40px;
 }
+
+.techImg{
+  max-width: 50px;
+  max-height: 50px;
+}
 /* Non-mobile, grid */
 @media only screen and (min-width: 640px) {
 

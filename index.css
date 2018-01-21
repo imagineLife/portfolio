@@ -587,6 +587,11 @@ p{
   margin: 0 5%;
 }
 
+.projectImg{
+  width:80%;
+  margin-bottom: 10px;
+}
+
 /* Non-mobile, grid */
 @media only screen and (min-width: 640px) {
 

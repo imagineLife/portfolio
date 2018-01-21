@@ -514,6 +514,10 @@ Begin Custom-styles
   text-align: center;
 }
 
+main{
+  margin-top: 40px;
+}
+
 body {
   font-family: "Open Sans",
   sans-serif; 
@@ -570,8 +574,9 @@ section:nth-child(even) {
 
 .skillWrapper{
   display: inline-block;
-  width:30%;
-  max-height:125px;
+  margin: 10px 3%;
+  width: 25%;
+  height: 125px;
 }
 
 .skillWrapper img {

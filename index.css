@@ -518,6 +518,11 @@ main{
   margin-top: 40px;
 }
 
+h1{
+  font-family: "Helvetica Nueva";
+  font-weight:bold;
+}
+
 body {
   font-family: "Open Sans",
   sans-serif; 

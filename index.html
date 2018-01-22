@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>HTML wireframe</title>
+    <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
     <nav role="navigation">
+        <!-- link to href, directly move to section-->
         <ul>
             <li>Skills / About</li>
             <li>Projects</li>
@@ -27,6 +28,7 @@
             <div id="erp">
                
                 <h2>Enterprise Resource Planner</h2>
+                <!-- MODAL -->
                 <img src="./imgs/erp/tickets.jpg" class="projectImg">
                 <img src="./imgs/erp/stats.jpg" class="projectImg">
                 <img src="./imgs/erp/manage.jpg" class="projectImg">
@@ -44,11 +46,18 @@
             
                 </div>           
                 
-                <p>This is a tool that I led a re-factoring development effort on for a small IT support business. 
-                    <br>
+                <p>
+                    This is a tool that I led a re-factoring development effort on for a small IT support business. 
+                </p>
+                <p>
                     <b>Problem:</b> The business was tired of its prior disintegrated systems for managing employees, work-tickets, time management and client management. 
-                    <br><b>Solution:</b> I led the building of this system, centralizing employee ticket management, work activity & assignment, invoice development, & business analytics.
-                    <br><i>Due to the proprietary nature of the data included, the screenshots have the text content removed. I do not have permission to show the entire project or link to its content.</i></p>
+                </p>
+                <p>
+                    <b>Solution:</b> I led the building of this system, centralizing employee ticket management, work activity & assignment, invoice development, & business analytics.
+                </p>
+                <p>
+                    <i>Due to the proprietary nature of the data included, the screenshots have the text content removed. I do not have permission to show the entire project or link to its content.</i>
+                </p>
 
             </div>
 
@@ -56,11 +65,18 @@
             
                 <h2>vinFinder</h2>
                 <img src="./imgs/vinFinder.jpg" class="projectImg">
-                <p>This is a tool for inputting a vin number of a vehicle against a database to verify if the vehicle has raced in prestigious races in the past. 
-                <br>
-                <b>Problem:</b>The business owner needed a way to instantaneously identifying the history of a vehicle, while standing in someone's garage or barn, by its vin number.
-                <br>
-                <b>Solution:</b>Due to the proprietary nature of this project and the data included, I can not show screenshots of the project. The functionality is such that a vin number, or a portion of a vin number, can be entered in the app, and if the vehicle raced a prestigious race data regarding the race history displays on screen.</p>                
+                <p>
+                    This is a tool for inputting a vin number of a vehicle against a database to verify if the vehicle has raced in prestigious races in the past. 
+                </p>
+                <p>
+                    <b>Problem:</b>The business owner needed a way to instantaneously identifying the history of a vehicle, while standing in someone's garage or barn, by its vin number.
+                </p>
+                <p>
+                    <b>Solution:</b>This app allowed for quick and constant access to an cloud-based database of records regarding cars with race history.
+                </p>
+                <p>
+                    <i>Due to the proprietary nature of this project and the data included, I can not show screenshots of the project. The functionality is such that a vin number, or a portion of a vin number, can be entered in the app, and if the vehicle raced a prestigious race data regarding the race history displays on screen.</i>
+                </p>                
             
             </div>
 
@@ -106,7 +122,6 @@
             <p>Find recipes based on macronutrient values!</p> 
             <p>Find a recipe using a minimum &/or maximum grams of Calories, Fats, Carbs, and Protein. Search any ingredients you have laying around and make something new, tasty, & fulfilling.</p>
             
-
             <h3>MyMiles</h3>
             <p>Easily track your vehicle's mileage.</p>
             <p>Export a mileage log when you need your mileage data with dates, trip distances, and totals included.</p>
@@ -119,6 +134,36 @@
         <section>
 
             <h1>Skillset</h1>
+
+            <!--
+
+            <h2>Stacks</h2>
+            
+            mongo
+            express
+            react
+            node
+
+            html 
+            js
+            jq
+            cs
+            d3
+
+            mysql
+            php
+            dhtmlx
+            API
+
+            Mocha
+            Chai
+            Enzyme
+            Jest
+
+            Github
+            Responsive Design
+
+             -->
 
             <div class="skillWrapper">
                 <img src="./imgs/React.png" alt="React.js">
@@ -238,6 +283,16 @@
             </p>
 
         </section>
+
+        <div id ="modal">
+
+            <button class='modalButton left'> &lt; </button>
+            
+            <img src="./imgs/chai.png" alt="chai">
+            
+            <button class='modalButton right'> &gt; </button>
+
+        </div>
 
     </main>
     <footer role="content-info">Footer</footer>

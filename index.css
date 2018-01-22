@@ -659,7 +659,15 @@ i{
   border:none;
   color: white;
   position: absolute;
+  left: 0;
 }
+
+.modalButton.right{
+  left: unset;
+  right: 0;
+}
+
+
 
 /* Non-mobile, grid */
 @media only screen and (min-width: 640px) {

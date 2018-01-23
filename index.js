@@ -1,0 +1,1 @@
+console.log('Dom Element',document.getElementById('modal'));

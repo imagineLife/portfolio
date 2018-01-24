@@ -522,7 +522,7 @@ h1{
 
 h2{
   font-size: 1.5em;
-  margin: 45px 0;
+  margin: 100px 0 20px 0;
   text-decoration: underline;
 }
 
@@ -532,6 +532,11 @@ body {
   font-size: 20px;
   color: #444;
   text-align: center;
+  line-height: 1.5;
+}
+
+p {
+  margin: 15px 3%;
   line-height: 1.5;
 }
 
@@ -556,6 +561,10 @@ nav ul{
   margin: 0;
   padding: 0;
   display:block;
+}
+
+nav ul a{
+  color: #444;
 }
 
 nav ul li {
@@ -600,10 +609,6 @@ section:nth-child(even) {
 
 a {
   text-decoration: none;
-}
-
-p{
-  margin: 0 5%;
 }
 
 i{

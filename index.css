@@ -621,6 +621,10 @@ i{
   margin-bottom: 10px;
 }
 
+.linksWrapper {
+  margin: 30px 0;
+}
+
 .linksWrapper a{
   display: inline-block;
   width: 45%;

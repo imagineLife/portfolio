@@ -9,6 +9,9 @@ function putPhotosInModal(arr){
     console.log('img src ->',thisImg.src);
     console.log('thisImg',thisImg);
     console.log('modalTableCell',tableCell);
+    while (tableCell.firstChild) {
+    tableCell.removeChild(tableCell.firstChild);
+}
     tableCell.appendChild(thisImg);
     modal.style.display = 'block';
 

@@ -5,10 +5,26 @@ function putPhotosInModal(arr){
     let modalTable = document.getElementsByClassName('modalTableCell');
     let thisImg = document.createElement('img');
     let tableCell = modalTable[0];
+/*
+    let tableCell = modalTable[0];
+    
+    //remove current photos from table
+    while (tableCell.firstChild) {
+	    tableCell.removeChild(tableCell.firstChild);
+	}
+    
+    //insert NEW photos into modal
+    for(i=1; i < arr.length + 1; i++){
+    	thisImg.src = arr[i];
+	    tableCell.appendChild(thisImg);
+	    thisImg.src = '';
+    }
+
+
+*/    
+
     thisImg.src = arr[0];
-    console.log('img src ->',thisImg.src);
-    console.log('thisImg',thisImg);
-    console.log('modalTableCell',tableCell);
+
     while (tableCell.firstChild) {
     tableCell.removeChild(tableCell.firstChild);
 }

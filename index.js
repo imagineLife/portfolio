@@ -1,6 +1,9 @@
 //4. Get Photos from file-directory
 function getFilesFromDirectory(num, path){
 	console.log('num ->',num,': path->',path);
+
+    //display the modal
+    modal.style.display = 'block';
 }
 
 
@@ -8,17 +11,22 @@ function getFilesFromDirectory(num, path){
 //3. Set the number of photos to get from the directory
 function setNumberOfPhotos(directoryPath){
 
+	console.log('made it here');
 	let numberOfPhotos = 0;
+	console.log('directoryPath',directoryPath);
 
 	switch (directoryPath){
 		
-		case './imgs/erp/' :
-			console.log('erp');
+		case ('./imgs/erp/') :
 			numberOfPhotos = 5;
-			console.log(numberOfPhotos);
 			getFilesFromDirectory(numberOfPhotos,directoryPath);
 			return;
 		
+		case ('./imgs/macro/') :
+			numberOfPhotos = 3;
+			getFilesFromDirectory(numberOfPhotos,directoryPath);		
+			return;
+
 		default:
 			return; 
 	}
@@ -46,8 +54,6 @@ function toggleModal(imageLoc){
     	let curImageDirectory = imageLoc.getAttribute("data-imageloc");
 
     	setNumberOfPhotos(curImageDirectory);
-    	//display the modal
-    	// modal.style.display = 'block';
 
     }else{
     	console.log('modal is open, closing modal');

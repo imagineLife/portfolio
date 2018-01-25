@@ -1,9 +1,29 @@
-//4. Get Photos from file-directory
-function getFilesFromDirectory(num, path){
-	console.log('num ->',num,': path->',path);
-
+//5. Build & append photo-filled divs to modal window
+function putPhotosInModal(arr){
+	console.log('photo array is ',arr);
     //display the modal
+    let modalTable = document.getElementsByClassName('modalTableCell');
+    let thisImg = document.createElement('img');
+    let tableCell = modalTable[0];
+    thisImg.src = arr[0];
+    console.log('img src ->',thisImg.src);
+    console.log('thisImg',thisImg);
+    console.log('modalTableCell',tableCell);
+    tableCell.appendChild(thisImg);
     modal.style.display = 'block';
+
+}
+
+//4. Get Photo filenames from directory, put photo paths into array
+function getFileNamesFromDirectory(num, path){
+
+	let photoArr = [];
+
+	for(let i = 1; i < (num +1); i ++){
+		photoArr.push(path+i+'.jpg');
+	}
+
+	putPhotosInModal(photoArr);
 }
 
 
@@ -19,12 +39,12 @@ function setNumberOfPhotos(directoryPath){
 		
 		case ('./imgs/erp/') :
 			numberOfPhotos = 5;
-			getFilesFromDirectory(numberOfPhotos,directoryPath);
+			getFileNamesFromDirectory(numberOfPhotos,directoryPath);
 			return;
 		
 		case ('./imgs/macro/') :
 			numberOfPhotos = 3;
-			getFilesFromDirectory(numberOfPhotos,directoryPath);		
+			getFileNamesFromDirectory(numberOfPhotos,directoryPath);		
 			return;
 
 		default:

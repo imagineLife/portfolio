@@ -9,7 +9,8 @@ function moveImage(direction){
 
     if(direction === 'right'){
         singleImageWidth *= -1;
-        console.log('photosLeft ->',numberOfPhotos);
+
+        console.log('numberOfPhotosLeft ->',numberOfPhotosLeft);
     }
 
     //move the images
@@ -27,7 +28,10 @@ function moveImage(direction){
 
 //5. Build & append photo-filled divs to modal window
 function putPhotosInModal(arr){
-	
+
+    //
+	numberOfPhotosLeft = numberOfPhotosLeft -1;
+    
     //create table var
     let modalTable = document.getElementsByTagName('table');
     modalTable = modalTable[0];
@@ -82,16 +86,19 @@ function getFileNamesFromDirectory(num, path){
 
 //3. Set the number of photos to get from the directory
 function setNumberOfPhotos(directoryPath){
+    let numberOfPhotos = 0;
 
 	switch (directoryPath){
 		
 		case ('./imgs/erp/') :
 			numberOfPhotos = 5;
+            numberOfPhotosLeft = 4;
 			getFileNamesFromDirectory(numberOfPhotos,directoryPath);
 			return;
 		
 		case ('./imgs/macro/') :
 			numberOfPhotos = 3;
+            numberOfPhotosLeft = 2;
 			getFileNamesFromDirectory(numberOfPhotos,directoryPath);		
 			return;
 
@@ -101,20 +108,10 @@ function setNumberOfPhotos(directoryPath){
 
 }
 
-//2. get the current image-file-path from the html element
-// function getCurImgFilePath(imageClicked){
-//     console.log('curImgFile',imageClicked.target);
-// }
-
 //1. Initial toggleModal
 function toggleModal(imageLoc){
     let modal = document.getElementById('modal')
     let modalStyle = getComputedStyle(modal)['display'];
-
-
-    //couldn't figure out adding the fn in ternary
-    //modal.style.display = ( modalStyle === 'block' ) ? 'none' : 'block';
-    //modal.style.display = ( modalStyle === 'block' ) ? getCurImgFilePath() : 'block';
 
 
     if(modalStyle === 'none'){
@@ -134,4 +131,4 @@ function toggleModal(imageLoc){
 //holds the COUNT of images in the imgArr
 //used for limiting the number of times
 // a user can click left-or-right
-let numberOfPhotos = 0;
+let numberOfPhotosLeft = 0;

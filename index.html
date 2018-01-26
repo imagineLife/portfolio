@@ -11,12 +11,12 @@
         <!-- link to href, directly move to section-->
         <ul>
             
-            <a href="#skillset">
-                <li>Skills/About</li>
-            </a>
-            
             <a href="#projects">
                 <li>Projects</li>                
+            </a>
+
+            <a href="#skillset">
+                <li>Skills/About</li>
             </a>
             
             <a href="#contact">
@@ -28,7 +28,7 @@
     <main role="main">
         <section>
 
-            <p>Welcome to my portfolio! My name is Eric and I'm a fullstack developer & fan of data visualization.</p>
+            <p class="introText">Welcome to my portfolio! My name is Eric and I'm a fullstack developer & fan of data visualization.</p>
 
         </section>
 
@@ -417,7 +417,7 @@
 
         <div id ="modal">
 
-            <button class='modalButton left'> &lt; </button>
+            <button class='modalButton left' onClick='moveImage("left")'> &lt; </button>
             
             <table>
                 <tr>
@@ -427,7 +427,7 @@
                 </tr>     
             </table>
             
-            <button class='modalButton right'> &gt; </button>
+            <button class='modalButton right' onClick='moveImage("right")'> &gt; </button>
 
             <button class="closeModal" onClick="toggleModal()">Close</button>
         </div>

@@ -13,6 +13,7 @@ function moveImage(direction){
 
     //when user selects 'right', move all the images LEFT
     if(direction === 'right'){
+
         singleImageWidth *= -(howMuchToMove);
        
     //move the images
@@ -23,21 +24,41 @@ function moveImage(direction){
         //reset how many photos are left in the carousel
         numberOfPhotosLeft = numberOfPhotosLeft - 1;
 
+        console.log('numberOfPhotos  ',numberOfPhotos);
+        console.log('numberOfPhotosLeft  ',numberOfPhotosLeft);
+
+
     //when user selects 'left' move all the images RIGHT
     }else{
+        console.log('howMuchToMove',howMuchToMove);
 
-        let howMuchToMoveRight = howMuchToMove - 1;
-        let howManyPxToMove = ( parseInt(howMuchToMoveRight) - 1 ) * singleImageWidth; 
+    //if at left-most, don't do anything
+        if(howMuchToMove == 1){
+            console.log('numberOfPhotos  ',numberOfPhotos);
+            console.log('numberOfPhotosLeft  ',numberOfPhotosLeft);
 
-        //calculate the move-right
+            console.log('leftmost, STOP!');
+            return;
+    
+    //if NOT at left-most photo, move-left   
+        }else{
 
-        //move the images
-        allImages.forEach((img) => {
-            img.style.left = -howManyPxToMove + 'px';
-        })
+            let howMuchToMoveRight = howMuchToMove - 1;
+            let howManyPxToMove = ( parseInt(howMuchToMoveRight) - 1 ) * singleImageWidth; 
 
-        //reset how many photos are left in the carousel
-        numberOfPhotosLeft = numberOfPhotosLeft + 1;
+            //calculate the move-right
+
+            //move the images
+            allImages.forEach((img) => {
+                img.style.left = -howManyPxToMove + 'px';
+            })
+
+            //reset how many photos are left in the carousel
+            numberOfPhotosLeft = numberOfPhotosLeft + 1;
+
+            console.log('numberOfPhotos  ',numberOfPhotos);
+            console.log('numberOfPhotosLeft  ',numberOfPhotosLeft);
+        }
 
     }
 }   

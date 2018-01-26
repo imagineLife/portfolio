@@ -1,34 +1,75 @@
+function moveImage(direction){
+
+    let allImages = document.querySelectorAll('.modalTableCell img');
+    let singleImageWidth = getComputedStyle(allImages[0]).width;
+    
+    singleImageWidth = parseInt(singleImageWidth.replace('px',''));
+    // console.log('singleImageWidth',singleImageWidth);
+    //returns 375 ex
+
+    if(direction === 'right'){
+        singleImageWidth *= -1;
+    }
+
+    //move the images
+    allImages.forEach((img) => {
+        img.style.left = singleImageWidth + 'px';
+    })
+
+    /*
+        set a var outside the fn
+            IF NOT will be overwritten each time its called. duh :/
+            holding WHERE in the picture-loop its AT,
+            need to update the (*= -2, -3),
+            COULD/SHOULD?! update based on image-width.
+
+            ALSO, figure out how to know if I reached the end of the array.      
+    */
+}   
+
+
+
+
 //5. Build & append photo-filled divs to modal window
 function putPhotosInModal(arr){
-	console.log('photo array is ',arr);
-    //display the modal
-    let modalTable = document.getElementsByClassName('modalTableCell');
-    let thisImg = document.createElement('img');
-    let tableCell = modalTable[0];
-/*
-    let tableCell = modalTable[0];
+	
+    console.log('photo array is ',arr);
+
+    //create table var
+    let modalTable = document.getElementsByTagName('table');
+    modalTable = modalTable[0];
+
+    //create cell var
+    let modalTableCell = document.getElementsByClassName('modalTableCell');
+    let tableCell = modalTableCell[0];
+
+    //set table width based or photo-array length
+    modalTable.style.width = parseInt(arr.length * 100) + '%';
     
+    //increase width of table
+    // to add padding, 
+    //AND 
+    //thisImg.style.margin, etc.
+
     //remove current photos from table
     while (tableCell.firstChild) {
 	    tableCell.removeChild(tableCell.firstChild);
 	}
     
+
     //insert NEW photos into modal
-    for(i=1; i < arr.length + 1; i++){
-    	thisImg.src = arr[i];
+    for(i=0; i < arr.length; i++){
+    
+        let thisImg = document.createElement('img');
+        thisImg.src = arr[i];
+
+        thisImg.style.width = parseInt(100 / arr.length) + '%';
+
+        console.log('thisImg',thisImg);
 	    tableCell.appendChild(thisImg);
-	    thisImg.src = '';
     }
 
 
-*/    
-
-    thisImg.src = arr[0];
-
-    while (tableCell.firstChild) {
-    tableCell.removeChild(tableCell.firstChild);
-}
-    tableCell.appendChild(thisImg);
     modal.style.display = 'block';
 
 }
@@ -50,7 +91,6 @@ function getFileNamesFromDirectory(num, path){
 //3. Set the number of photos to get from the directory
 function setNumberOfPhotos(directoryPath){
 
-	console.log('made it here');
 	let numberOfPhotos = 0;
 	console.log('directoryPath',directoryPath);
 
@@ -73,9 +113,9 @@ function setNumberOfPhotos(directoryPath){
 }
 
 //2. get the current image-file-path from the html element
-function getCurImgFilePath(imageClicked){
-    console.log('curImgFile',imageClicked.target);
-}
+// function getCurImgFilePath(imageClicked){
+//     console.log('curImgFile',imageClicked.target);
+// }
 
 //1. Initial toggleModal
 function toggleModal(imageLoc){
@@ -98,6 +138,5 @@ function toggleModal(imageLoc){
     	console.log('modal is open, closing modal');
     	modal.style.display = 'none';
     }
-
 
 }

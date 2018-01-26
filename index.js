@@ -1,4 +1,12 @@
+
+//Called from arrows inside carousel
+//moves images left-or-right
 function moveImage(direction){
+        console.log('BEGIN MOVE numberOfPhotosLeft ->',numberOfPhotosLeft);
+        console.log('BEGIN totalPhotos - leftPhotos ->',numberOfPhotos - numberOfPhotosLeft);
+
+    //Calculate how much to move the images
+    let howMuchToMove = numberOfPhotos - numberOfPhotosLeft;
 
     let allImages = document.querySelectorAll('.modalTableCell img');
     let singleImageWidth = getComputedStyle(allImages[0]).width;
@@ -8,14 +16,21 @@ function moveImage(direction){
     //returns 375 ex
 
     if(direction === 'right'){
-        singleImageWidth *= -1;
-
-        console.log('numberOfPhotosLeft ->',numberOfPhotosLeft);
+        singleImageWidth *= -(howMuchToMove);
+        numberOfPhotosLeft = numberOfPhotosLeft - 1;
+        console.log('FINISH MOVE numberOfPhotosLeft ->',numberOfPhotosLeft);
+        /*
+        move photo left
+            how much?
+            numberOfPhotos-numberOfPhotosLeft
+        */
+        console.log('FINISH totalPhotos - leftPhotos ->',numberOfPhotos - numberOfPhotosLeft);
     }
 
     //move the images
     allImages.forEach((img) => {
         img.style.left = singleImageWidth + 'px';
+        console.log('reset style ',singleImageWidth,' left');
     })
 
     /*
@@ -28,9 +43,6 @@ function moveImage(direction){
 
 //5. Build & append photo-filled divs to modal window
 function putPhotosInModal(arr){
-
-    //
-	numberOfPhotosLeft = numberOfPhotosLeft -1;
     
     //create table var
     let modalTable = document.getElementsByTagName('table');
@@ -42,7 +54,7 @@ function putPhotosInModal(arr){
 
     //set table width based or photo-array length
     modalTable.style.width = parseInt(arr.length * 100) + '%';
-    
+
     //increase width of table
     // to add padding, 
     //AND 
@@ -86,20 +98,22 @@ function getFileNamesFromDirectory(num, path){
 
 //3. Set the number of photos to get from the directory
 function setNumberOfPhotos(directoryPath){
-    let numberOfPhotos = 0;
 
 	switch (directoryPath){
 		
 		case ('./imgs/erp/') :
 			numberOfPhotos = 5;
             numberOfPhotosLeft = 4;
+            console.log('number of photos LEFT in modal',numberOfPhotosLeft);
 			getFileNamesFromDirectory(numberOfPhotos,directoryPath);
+
 			return;
 		
 		case ('./imgs/macro/') :
 			numberOfPhotos = 3;
             numberOfPhotosLeft = 2;
 			getFileNamesFromDirectory(numberOfPhotos,directoryPath);		
+            console.log('number of photos LEFT in modal',numberOfPhotosLeft);
 			return;
 
 		default:
@@ -126,6 +140,10 @@ function toggleModal(imageLoc){
     }
 
 }
+
+
+//Hold TOTAL number of photos in modal
+let numberOfPhotos = 0;
 
 
 //holds the COUNT of images in the imgArr

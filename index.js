@@ -14,20 +14,24 @@ function moveImage(direction){
     //when user selects 'right', move all the images LEFT
     if(direction === 'right'){
 
-        singleImageWidth *= -(howMuchToMove);
-       
-    //move the images
-        allImages.forEach((img) => {
-            img.style.left = singleImageWidth + 'px';
-        })
+        if(numberOfPhotosLeft == 0){
+            return;
+        }else{
 
-        //reset how many photos are left in the carousel
-        numberOfPhotosLeft = numberOfPhotosLeft - 1;
+            singleImageWidth *= -(howMuchToMove);
+           
+        //move the images
+            allImages.forEach((img) => {
+                img.style.left = singleImageWidth + 'px';
+            })
 
-        console.log('numberOfPhotos  ',numberOfPhotos);
-        console.log('numberOfPhotosLeft  ',numberOfPhotosLeft);
+            //reset how many photos are left in the carousel
+            numberOfPhotosLeft = numberOfPhotosLeft - 1;
 
+            console.log('numberOfPhotos  ',numberOfPhotos);
+            console.log('numberOfPhotosLeft  ',numberOfPhotosLeft);
 
+        }
     //when user selects 'left' move all the images RIGHT
     }else{
         console.log('howMuchToMove',howMuchToMove);

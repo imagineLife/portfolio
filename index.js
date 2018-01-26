@@ -5,7 +5,7 @@ function moveImage(direction){
 
     //Calculate how much to move the images
     let howMuchToMove = numberOfPhotos - numberOfPhotosLeft;
-
+    
     let allImages = document.querySelectorAll('.modalTableCell img');
     let singleImageWidth = getComputedStyle(allImages[0]).width;
     
@@ -14,8 +14,11 @@ function moveImage(direction){
     //when user selects 'right', move all the images LEFT
     if(direction === 'right'){
 
+    //If at the end of the phots, STOP!
         if(numberOfPhotosLeft == 0){
             return;
+        
+    //If NOT at the end of the phots, move them left
         }else{
 
             singleImageWidth *= -(howMuchToMove);
@@ -25,23 +28,16 @@ function moveImage(direction){
                 img.style.left = singleImageWidth + 'px';
             })
 
-            //reset how many photos are left in the carousel
+        //reset how many photos are left in the carousel
             numberOfPhotosLeft = numberOfPhotosLeft - 1;
 
-            console.log('numberOfPhotos  ',numberOfPhotos);
-            console.log('numberOfPhotosLeft  ',numberOfPhotosLeft);
 
         }
     //when user selects 'left' move all the images RIGHT
     }else{
-        console.log('howMuchToMove',howMuchToMove);
 
-    //if at left-most, don't do anything
+   //If at the end of the phots, STOP!
         if(howMuchToMove == 1){
-            console.log('numberOfPhotos  ',numberOfPhotos);
-            console.log('numberOfPhotosLeft  ',numberOfPhotosLeft);
-
-            console.log('leftmost, STOP!');
             return;
     
     //if NOT at left-most photo, move-left   
@@ -50,18 +46,13 @@ function moveImage(direction){
             let howMuchToMoveRight = howMuchToMove - 1;
             let howManyPxToMove = ( parseInt(howMuchToMoveRight) - 1 ) * singleImageWidth; 
 
-            //calculate the move-right
-
-            //move the images
+        //move the images
             allImages.forEach((img) => {
                 img.style.left = -howManyPxToMove + 'px';
             })
 
-            //reset how many photos are left in the carousel
+        //reset how many photos are left in the carousel
             numberOfPhotosLeft = numberOfPhotosLeft + 1;
-
-            console.log('numberOfPhotos  ',numberOfPhotos);
-            console.log('numberOfPhotosLeft  ',numberOfPhotosLeft);
         }
 
     }

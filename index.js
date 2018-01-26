@@ -9,6 +9,7 @@ function moveImage(direction){
 
     if(direction === 'right'){
         singleImageWidth *= -1;
+        console.log('photosLeft ->',numberOfPhotos);
     }
 
     //move the images
@@ -17,13 +18,7 @@ function moveImage(direction){
     })
 
     /*
-        set a var outside the fn
-            IF NOT will be overwritten each time its called. duh :/
-            holding WHERE in the picture-loop its AT,
-            need to update the (*= -2, -3),
-            COULD/SHOULD?! update based on image-width.
-
-            ALSO, figure out how to know if I reached the end of the array.      
+      
     */
 }   
 
@@ -33,8 +28,6 @@ function moveImage(direction){
 //5. Build & append photo-filled divs to modal window
 function putPhotosInModal(arr){
 	
-    console.log('photo array is ',arr);
-
     //create table var
     let modalTable = document.getElementsByTagName('table');
     modalTable = modalTable[0];
@@ -65,7 +58,6 @@ function putPhotosInModal(arr){
 
         thisImg.style.width = parseInt(100 / arr.length) + '%';
 
-        console.log('thisImg',thisImg);
 	    tableCell.appendChild(thisImg);
     }
 
@@ -90,9 +82,6 @@ function getFileNamesFromDirectory(num, path){
 
 //3. Set the number of photos to get from the directory
 function setNumberOfPhotos(directoryPath){
-
-	let numberOfPhotos = 0;
-	console.log('directoryPath',directoryPath);
 
 	switch (directoryPath){
 		
@@ -140,3 +129,9 @@ function toggleModal(imageLoc){
     }
 
 }
+
+
+//holds the COUNT of images in the imgArr
+//used for limiting the number of times
+// a user can click left-or-right
+let numberOfPhotos = 0;

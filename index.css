@@ -714,7 +714,7 @@ i{
   height: 55px;
   width: 70%;
   bottom:30px;
-  border:none;
+  border:1px solid white;
   left: 15%;
   border-radius: 30px;
 }

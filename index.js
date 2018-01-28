@@ -161,6 +161,12 @@ function setNumberOfPhotos(directoryPath){
             console.log('number of photos LEFT in modal',numberOfPhotosLeft);
 			return;
 
+        case ('./imgs/jazzQuiz/') :
+            numberOfPhotos = 3;
+            numberOfPhotosLeft = 2;
+            getFileNamesFromDirectory(numberOfPhotos,directoryPath);        
+            console.log('number of photos LEFT in modal',numberOfPhotosLeft);
+            return;
 		default:
 			return; 
 	}

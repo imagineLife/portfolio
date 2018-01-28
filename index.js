@@ -91,9 +91,9 @@ function putPhotosInModal(arr){
     
         let thisImg = document.createElement('img');
         thisImg.src = arr[i];
-
+        thisImg.className = "modalImage";
         thisImg.style.width = parseInt(100 / arr.length) + '%';
-
+        console.log('thisImg.style ->',thisImg.style);
 	    tableCell.appendChild(thisImg);
     }
 

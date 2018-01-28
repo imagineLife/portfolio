@@ -741,4 +741,8 @@ i{
     width: 800px;
   }
 
+  .modalImage{
+    max-width: 600px;
+  }
+
 }

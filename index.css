@@ -732,18 +732,17 @@ i{
 
   .projectImg {
     max-width: 600px;
-    max-height:600px;
     width: auto;
+    max-height:600px;
     height: auto;
   }
 
-  .modalTableCell img{
-    width: 800px;
+  .modalButton{
+    width:90px;
   }
 
   .modalImage{
-    padding: 0 200px;
-    margin: auto;
+    padding: 0 300px;
   }
 
 }

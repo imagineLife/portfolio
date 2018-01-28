@@ -118,6 +118,7 @@ function getFileNamesFromDirectory(num, path){
 
 //3. Set the number of photos to get from the directory
 function setNumberOfPhotos(directoryPath){
+    console.log('setting number pf photos from ',directoryPath);
 
 	switch (directoryPath){
 		
@@ -128,7 +129,31 @@ function setNumberOfPhotos(directoryPath){
 			getFileNamesFromDirectory(numberOfPhotos,directoryPath);
 
 			return;
-		
+
+        case ('./imgs/vinFinder/') :
+            numberOfPhotos = 1;
+            numberOfPhotosLeft = 0;
+            console.log('number of photos LEFT in modal',numberOfPhotosLeft);
+            getFileNamesFromDirectory(numberOfPhotos,directoryPath);
+
+            return;
+
+        case ('./imgs/miles/') :
+            numberOfPhotos = 3;
+            numberOfPhotosLeft = 2;
+            console.log('number of photos LEFT in modal',numberOfPhotosLeft);
+            getFileNamesFromDirectory(numberOfPhotos,directoryPath);
+
+            return;
+
+        case ('./imgs/say-what/') :
+            numberOfPhotos = 4;
+            numberOfPhotosLeft = 3;
+            console.log('number of photos LEFT in modal',numberOfPhotosLeft);
+            getFileNamesFromDirectory(numberOfPhotos,directoryPath);
+
+            return;
+
 		case ('./imgs/macro/') :
 			numberOfPhotos = 3;
             numberOfPhotosLeft = 2;

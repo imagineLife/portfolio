@@ -742,7 +742,8 @@ i{
   }
 
   .modalImage{
-    max-width: 600px;
+    padding: 0 200px;
+    margin: auto;
   }
 
 }

@@ -520,6 +520,11 @@ h1{
   font-size: 2.5em;
 }
 
+.welcome{
+  font-size: 2em;
+  margin-bottom:0px;
+}
+
 h2{
   font-size: 1.5em;
   margin: 100px 0 20px 0;
@@ -541,7 +546,11 @@ p {
 }
 
 .introText{
-  margin:100px 5%;
+  display:inline;
+}
+
+#welcomeWrapper{
+  padding: 100px 010px;
 }
 
 nav,

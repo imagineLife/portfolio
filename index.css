@@ -635,7 +635,7 @@ i{
 }
 
 .linksWrapper {
-  margin: 30px 0;
+  margin: 50px 0 80px 0;
 }
 
 .linksWrapper a{
@@ -692,7 +692,7 @@ i{
 .modalTableCell img{
   position: relative;
   display:inline;
-  max-height: 75%;
+  max-height: 60%;
   float: left;
 }
 
@@ -739,9 +739,9 @@ i{
 
   .projectImg {
     max-width: 600px;
-    width: auto;
     max-height:600px;
     height: auto;
+    width: auto;
   }
 
   .modalButton.left, .modalButton.right,{
@@ -749,7 +749,7 @@ i{
   }
 
   .modalImage{
-    padding: 0 300px;
+    padding: 0 250px;
   }
 
 }

@@ -549,6 +549,15 @@ p {
   display:inline;
 }
 
+.welcomeSec{
+  background-image: url(imgs/page/Hello.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: cover;
+  background-color: #464646;
+}
+
 #welcomeWrapper{
   padding: 100px 010px;
 }

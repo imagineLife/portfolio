@@ -696,6 +696,11 @@ i{
 .skill{
   background-image: url(imgs/page/skills.jpg);
 }
+
+.aboutMe{
+  background-image: url(imgs/page/AboutMe.jpg);
+}
+
 #modal{
   width:100%;
   height:100%;

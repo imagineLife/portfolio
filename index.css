@@ -518,6 +518,7 @@ h1{
   font-family: "Helvetica Nueva";
   font-weight:400;
   font-size: 2.5em;
+  color: #FFF;
 }
 
 .welcome{
@@ -528,7 +529,7 @@ h1{
 h2{
   font-size: 1.5em;
   font-weight: 400;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 body {
@@ -633,6 +634,12 @@ i{
   font-style: italic;
 }
 
+.introText{
+  position: absolute;
+  color: #FFF;
+  bottom: 0;
+}
+
 #erp{
   background-color: #C5B162;
 }
@@ -658,10 +665,9 @@ i{
 }
 
 .project{
-  padding-top:50px;
-  padding-bottom: 50px;
+  padding-top:30px;
+  padding-bottom: 30px;
   margin-bottom: 25px;
-
 }
 
 .projectImgWrapper{
@@ -739,7 +745,6 @@ i{
 .modalTableCell img{
   position: relative;
   display:inline;
-  max-height: 60%;
   float: left;
 }
 
@@ -782,6 +787,10 @@ i{
     bottom: auto;
   }
 
+  h2{
+    margin-bottom: 50px;
+  }
+
   .welcome{
     font-size: 5em;
     margin-top: 400px;
@@ -808,6 +817,8 @@ i{
 
   .project{
     overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin-bottom: 50px;
   }
 

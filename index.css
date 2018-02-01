@@ -603,11 +603,11 @@ header {
 section {
   min-height: 200px;
   padding: 5px 0;
-  background-color: #bbb;
+  background-color: #212121;
 }
 
 section:nth-child(even) {
-  background-color: #ddd;
+  background-color: #212121;
 }
 
 .skillWrapper{
@@ -687,18 +687,6 @@ i{
   background-size: cover;
   background-color: #464646;
   line-height: 300px;
-}
-
-.proj{
-  background-image: url(imgs/page/Projects.jpg);
-}
-
-.skill{
-  background-image: url(imgs/page/skills.jpg);
-}
-
-.aboutMe{
-  background-image: url(imgs/page/AboutMe.jpg);
 }
 
 #modal{

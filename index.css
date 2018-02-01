@@ -602,6 +602,11 @@ section {
   background-color: #212121;
 }
 
+.inner{
+  background-color:inherit;
+  color:#252726;
+}
+
 .skillWrapper{
   display: inline-block;
   margin: 10px 3%;
@@ -628,7 +633,7 @@ i{
 }
 
 #erp{
-  background-color: #FCF5E0;
+  background-color: #C5B162;
 }
 
 .projectImg{

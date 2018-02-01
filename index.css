@@ -796,11 +796,53 @@ i{
     margin: 0 auto;
   }
 
+  #projects section{
+    padding-bottom: 0;
+  }
+
+  .project{
+    overflow: hidden;
+  }
+
+  .project:nth-child(odd) .projectImgWrapper{
+    float:right;
+  }
+
+  .projectTextWrapper p{
+    text-align:left;
+  }
+
+  .project:nth-child(odd) .projectTextWrapper p{
+    text-align:right;
+  }
+  
+  .projectImgWrapper{
+    height: 100%;
+  }
+
   .projectImg {
     max-width: 600px;
     max-height:600px;
     height: auto;
     width: auto;
+  }
+
+  .projectTextWrapper{
+    margin-top: 0px;
+  }
+
+  .project section{
+    float: left;
+    width:50%;
+    vertical-align: top;
+  }
+
+  .techWrapper{
+    margin-top: calc(100% - 150px);
+    background-color: rgba(0,0,0,.25);
+    padding: 0;
+    width: calc(100% + 20px);
+    margin-left: -10px;
   }
 
   .modalButton.left, .modalButton.right,{

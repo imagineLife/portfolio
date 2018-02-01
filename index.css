@@ -660,6 +660,8 @@ i{
 .project{
   padding-top:50px;
   padding-bottom: 50px;
+  margin-bottom: 25px;
+
 }
 
 .projectImgWrapper{
@@ -806,6 +808,7 @@ i{
 
   .project{
     overflow: hidden;
+    margin-bottom: 50px;
   }
 
   .project:nth-child(odd) .projectImgWrapper{

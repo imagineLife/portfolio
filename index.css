@@ -527,7 +527,6 @@ h1{
 
 h2{
   font-size: 1.5em;
-  margin: 100px 0 20px 0;
   text-decoration: underline;
 }
 
@@ -684,6 +683,7 @@ i{
   background-attachment: inherit;
   background-size: cover;
   background-color: #464646;
+  padding:2em 0;
 }
 
 #modal{

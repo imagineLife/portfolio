@@ -525,12 +525,9 @@ h1{
   font-size: 2em;
 }
 
-.headerH1{
-  margin: 0;
-}
-
 h2{
   font-size: 1.5em;
+  margin: 100px 0 20px 0;
   text-decoration: underline;
 }
 
@@ -602,11 +599,7 @@ header {
 
 section {
   min-height: 200px;
-  padding: 5px 0;
-  background-color: #212121;
-}
-
-section:nth-child(even) {
+  padding: 5px 10px 50px 10px;
   background-color: #212121;
 }
 
@@ -633,15 +626,6 @@ a {
 i{
   font-size: .8em;
   font-style: italic;
-}
-
-.project{
-  
-}
-
-
-#erp{
-  background-color: #D4C88F;
 }
 
 .projectImg{
@@ -682,16 +666,6 @@ i{
 
 .stackWrapper{
   margin-bottom: 100px;
-}
-
-.shortPhotoHeader{
-  height:300px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: cover;
-  background-color: #464646;
-  line-height: 300px;
 }
 
 #modal{

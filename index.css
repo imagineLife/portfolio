@@ -521,9 +521,8 @@ h1{
 }
 
 .welcome{
-  font-size: 5em;
-  margin-bottom:0px;
-  margin: 200px 0 auto 0;
+  margin-top: 200px;
+  font-size: 2em;
 }
 
 h2{
@@ -546,13 +545,10 @@ p {
   line-height: 1.5;
 }
 
-.introText{
-  display:inline;
-  bottom: 0;
-}
+
 
 .welcomeSec{
-  height: 800px;
+  height: 700px;
   background-image: url(imgs/page/Hello.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -561,9 +557,8 @@ p {
   background-color: #464646;
 }
 
-nav,
-footer {
-  background-color: #aaa;
+nav{
+  background-color: rgba(0,0,0,.75);
 }
 
 nav {
@@ -585,7 +580,7 @@ nav ul{
 }
 
 nav ul a{
-  color: #444;
+  color: white;
 }
 
 nav ul li {
@@ -737,9 +732,23 @@ i{
 
 /* Non-mobile, grid */
 @media only screen and (min-width: 640px) {
+  
   nav{
     top: 0;
     bottom: auto;
+  }
+
+  .welcome{
+    font-size: 5em;
+    margin-top: 400px;
+  }
+
+  .introText{
+    margin-top: 150px;
+  }
+
+  .welcomeSec{
+    height:800px;
   }
 
   section p, section h1, section div {

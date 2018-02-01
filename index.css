@@ -558,7 +558,7 @@ p {
 }
 
 nav{
-  background-color: rgba(0,0,0,.75);
+  background-color: rgba(0,0,0,.8);
 }
 
 nav {
@@ -649,14 +649,30 @@ i{
   background-color: #ABAFC5;
 }
 
+#my-miles{
+  background-color: #F89785;
+}
+
 .project{
   padding-top:50px;
   padding-bottom: 50px;
 }
 
+.projectImgWrapper{
+  height: 300px;
+}
+
+.projectTextWrapper{
+  margin-top:120px;
+}
+
 .projectImg{
   width:80%;
   margin-bottom: 10px;
+}
+
+.techWrapper{
+  margin-top: 300px;
 }
 
 .linksWrapper {

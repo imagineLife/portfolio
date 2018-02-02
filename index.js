@@ -5,8 +5,9 @@ function moveImage(direction){
 
     //Calculate how much to move the images
     let howMuchToMove = numberOfPhotos - numberOfPhotosLeft;
-    
+
     let allImages = document.querySelectorAll('.modalTableCell img');
+
     let singleImageWidth = getComputedStyle(allImages[0]).width;
     
     singleImageWidth = parseInt(singleImageWidth.replace('px',''));
@@ -20,9 +21,7 @@ function moveImage(direction){
         
     //If NOT at the end of the phots, move them left
         }else{
-
             singleImageWidth *= -(howMuchToMove);
-           
         //move the images
             allImages.forEach((img) => {
                 img.style.left = singleImageWidth + 'px';
@@ -75,11 +74,6 @@ function putPhotosInModal(arr){
     //set table width based or photo-array length
     modalTable.style.width = parseInt(arr.length * 100) + '%';
 
-    //increase width of table
-    // to add padding, 
-    //AND 
-    //thisImg.style.margin, etc.
-
     //remove current photos from table
     while (tableCell.firstChild) {
 	    tableCell.removeChild(tableCell.firstChild);
@@ -93,7 +87,6 @@ function putPhotosInModal(arr){
         thisImg.src = arr[i];
         thisImg.className = "modalImage";
         thisImg.style.width = parseInt(100 / arr.length) + '%';
-        console.log('thisImg.style ->',thisImg.style);
 	    tableCell.appendChild(thisImg);
     }
 
@@ -118,14 +111,12 @@ function getFileNamesFromDirectory(num, path){
 
 //3. Set the number of photos to get from the directory
 function setNumberOfPhotos(directoryPath){
-    console.log('setting number pf photos from ',directoryPath);
 
 	switch (directoryPath){
 		
 		case ('./imgs/erp/') :
 			numberOfPhotos = 5;
             numberOfPhotosLeft = 4;
-            console.log('number of photos LEFT in modal',numberOfPhotosLeft);
 			getFileNamesFromDirectory(numberOfPhotos,directoryPath);
 
 			return;
@@ -133,7 +124,6 @@ function setNumberOfPhotos(directoryPath){
         case ('./imgs/vinFinder/') :
             numberOfPhotos = 1;
             numberOfPhotosLeft = 0;
-            console.log('number of photos LEFT in modal',numberOfPhotosLeft);
             getFileNamesFromDirectory(numberOfPhotos,directoryPath);
 
             return;
@@ -141,7 +131,6 @@ function setNumberOfPhotos(directoryPath){
         case ('./imgs/miles/') :
             numberOfPhotos = 3;
             numberOfPhotosLeft = 2;
-            console.log('number of photos LEFT in modal',numberOfPhotosLeft);
             getFileNamesFromDirectory(numberOfPhotos,directoryPath);
 
             return;
@@ -149,7 +138,6 @@ function setNumberOfPhotos(directoryPath){
         case ('./imgs/say-what/') :
             numberOfPhotos = 4;
             numberOfPhotosLeft = 3;
-            console.log('number of photos LEFT in modal',numberOfPhotosLeft);
             getFileNamesFromDirectory(numberOfPhotos,directoryPath);
 
             return;
@@ -158,14 +146,12 @@ function setNumberOfPhotos(directoryPath){
 			numberOfPhotos = 3;
             numberOfPhotosLeft = 2;
 			getFileNamesFromDirectory(numberOfPhotos,directoryPath);		
-            console.log('number of photos LEFT in modal',numberOfPhotosLeft);
 			return;
 
         case ('./imgs/jazzQuiz/') :
             numberOfPhotos = 3;
             numberOfPhotosLeft = 2;
             getFileNamesFromDirectory(numberOfPhotos,directoryPath);        
-            console.log('number of photos LEFT in modal',numberOfPhotosLeft);
             return;
 		default:
 			return; 
@@ -180,13 +166,11 @@ function toggleModal(imageLoc){
 
 
     if(modalStyle === 'none'){
-    	console.log('modal is closed, opening modal');
     	let curImageDirectory = imageLoc.getAttribute("data-imageloc");
 
     	setNumberOfPhotos(curImageDirectory);
 
     }else{
-    	console.log('modal is open, closing modal');
     	modal.style.display = 'none';
     }
 

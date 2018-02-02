@@ -638,6 +638,12 @@ i {
   left: 15%;
   border-radius: 30px; }
 
+.modalImage {
+  position: relative; }
+
+.modalTableCell {
+  vertical-align: middle; }
+
 /* Non-mobile, grid */
 @media only screen and (min-width: 640px) {
   nav {

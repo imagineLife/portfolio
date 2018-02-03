@@ -1,4 +1,4 @@
-[I'm an inline-style link with title](https://imaginelife.github.io/portfolio/ "Live Porfolio Here!")
+[Live Porfolio Here!](https://imaginelife.github.io/portfolio/ "Live Porfolio Here!")
 
 ## Portfolio Screenshots
 ![Welcome Screenshot](imgs/port/welcome.jpg "Welcome Screenshot")

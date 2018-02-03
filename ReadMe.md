@@ -1,0 +1,15 @@
+## Portfolio
+<a href="say-what.netlify.com">SayWhat??!</a> is a responsive full-stack app where users have an analytical view of speeches.
+![Alt text](imgs/welcome.jpg?raw=true "Welcome")
+![Alt text](imgs/projects.jpg?raw=true "Projects Overview")
+![Alt text](imgs/links.jpg?raw=true "Links to Projects")
+![Alt text](imgs/responsive.jpg?raw=true "Responsive design")
+
+## An overview of some projects! 
+Included are:
+	- Enterprise Resource Planner (ERP),
+		A ticket-based management system that includes invoice development & processing, as well as employee time-tracking & management
+
+	- vinFinder
+
+	- sayWhat

@@ -1,9 +1,9 @@
 ## Portfolio
-<img src="imgs/port/welcome.jpg" width="400" align="left" style="display:inline-block;">
-<img src="imgs/port/projects.jpg" width="400" align="right" style="display:inline-block;">
+<img src="imgs/port/welcome.jpg" max-width="400" max-height='350' align="left" style="display:inline-block;">
+<img src="imgs/port/projects.jpg" max-width="400" max-height='350' align="right" style="display:inline-block;">
 </br>
-<img src="imgs/port/links.jpg" width="400" align="left" style="display:inline-block;">
-<img src="imgs/port/responsive.jpg" width="400" align="right" style="display:inline-block;">
+<img src="imgs/port/links.jpg" max-width="400" max-height='350' align="left" style="display:inline-block;">
+<img src="imgs/port/responsive.jpg" max-width="400" max-height='350' align="right" style="display:inline-block;">
 </br>
 </br>
 ## An overview of some projects 

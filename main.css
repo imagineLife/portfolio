@@ -549,7 +549,7 @@ i {
 .introText {
   position: absolute;
   color: #FFF;
-  bottom: 0; }
+  bottom: 40px; }
 
 #erp {
   background-color: #C5B162; }

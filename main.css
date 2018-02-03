@@ -495,7 +495,8 @@ nav {
 
 p {
   margin: 20px 3%;
-  line-height: 1.5; }
+  line-height: 1.75;
+  font-size: 1.25rem; }
 
 section {
   min-height: 200px;
@@ -578,11 +579,11 @@ i {
   margin-top: 300px; }
 
 .linksWrapper {
-  margin: 50px 0 80px 0; }
+  margin: 150px 0 80px 0; }
 
 .linkImg {
   height: 40px;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
   display: block; }
 
 .contactLink {
@@ -711,7 +712,8 @@ i {
     width: 90px; }
 
   .modalImage {
-    padding: 0 300px; }
+    padding: 0 300px;
+    vertical-align: middle; }
 
   .techImg {
     margin: 0 30px; }

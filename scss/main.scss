@@ -74,7 +74,8 @@ nav {
 
 p {
   margin: 20px 3%;
-  line-height: 1.5;
+  line-height: 1.75;
+  font-size: 1.25rem;
 }
 
 section {
@@ -185,13 +186,13 @@ i{
 }
 
 .linksWrapper {
-  margin: 50px 0 80px 0;
+  margin: 150px 0 80px 0;
 }
 
 
 .linkImg{
   height:40px;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
   display: block;
 }
 
@@ -270,6 +271,7 @@ i{
 .modalTableCell{
 	vertical-align: middle;
 }
+
 /* Non-mobile, grid */
 @media only screen and (min-width: 640px) {
   
@@ -365,6 +367,7 @@ i{
 
   .modalImage{
     padding: 0 300px;
+    vertical-align: middle;
   }
 
   .techImg{

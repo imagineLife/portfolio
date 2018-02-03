@@ -35,8 +35,7 @@ header {
 }
 
 h2{
-  font-size: 1.5em;
-  font-weight: 400;
+  font-size: 2em;
   margin-bottom: 30px;
 }
 
@@ -192,8 +191,8 @@ i{
 
 .linkImg{
   height:40px;
-  display: block;
   margin: 0 auto;
+  display: block;
 }
 
 .contactLink{
@@ -299,7 +298,7 @@ i{
 
   section{
   	p, h1, div{
-	    max-width: 1000px;
+	    max-width: 1100px;
 	    padding-left: 20px;
 	    padding-right: 20px;
 	    margin: 0 auto;
@@ -353,7 +352,7 @@ i{
   }
 
   .techWrapper{
-    margin-top: calc(100% - 150px);
+    margin-top: 100%;
     background-color: rgba(0,0,0,.5);
     padding: 0;
     width: calc(100% + 20px);
@@ -365,11 +364,19 @@ i{
   }
 
   .modalImage{
-    padding: 0 250px;
+    padding: 0 300px;
   }
 
   .techImg{
-    margin: 0 20px;
+    margin: 0 30px;
+  }
+
+  .image{
+  height:100%
+  }
+
+  .siteLink{
+    margin-top:20px;
   }
 
 }

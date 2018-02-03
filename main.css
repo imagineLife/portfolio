@@ -687,7 +687,6 @@ i {
   .project {
     overflow: hidden;
     padding-top: 50px;
-    padding-bottom: 50px;
     margin-bottom: 50px; }
     .project section {
       float: left;
@@ -714,8 +713,8 @@ i {
 
   .techWrapper {
     margin-top: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 0;
+    background-color: inherit;
+    padding-top: 10px;
     width: calc(100% + 20px);
     margin-left: -10px; }
 

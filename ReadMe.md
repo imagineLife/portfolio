@@ -1,5 +1,6 @@
 ## Portfolio
-![Alt text](imgs/port/welcome.jpg?raw=true&align=right "Welcome")
+![Alt text](imgs/port/welcome.jpg?raw=true "Welcome")
+<p>Test paragraph</p>
 ![Alt text](imgs/port/projects.jpg?raw=true "Projects Overview")
 ![Alt text](imgs/port/links.jpg?raw=true "Links to Projects")
 ![Alt text](imgs/port/responsive.jpg?raw=true "Responsive design")

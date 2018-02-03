@@ -20,5 +20,5 @@ Included are:</br>
 	- Jazz Quizz</br>
 		Test your Jazz Trivia with this fun quiz app!</br></br></br>
 
-## An overview of the Skills I've used in these projects##
+## An overview of the Skills I've used in these projects
 My favorites as of recent include react, redux, D3 and mongoDB.

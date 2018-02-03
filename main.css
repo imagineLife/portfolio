@@ -469,8 +469,8 @@ h2 {
   margin-bottom: 30px; }
 
 nav {
-  background: #FFF;
-  background-color: rgba(255, 255, 255, 0.3);
+  background: black;
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   bottom: 0;
   left: 0;

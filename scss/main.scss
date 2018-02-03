@@ -41,7 +41,7 @@ h2{
 }
 
 nav {
-  @include bgOpacity($test,.3);
+  @include bgOpacity($black, .5);
   position: fixed;
   bottom: 0;
   left: 0;

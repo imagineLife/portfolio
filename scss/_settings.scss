@@ -1,7 +1,8 @@
 $white : #FFF;
 $test : #FFF;
+$black: black;
 
-@mixin bgOpacity($color : black, $opacity: .8){
+@mixin bgOpacity($color : black, $opacity: .5){
   background:$color;
   background-color: rgba($color,$opacity);
 }

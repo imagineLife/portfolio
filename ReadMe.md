@@ -1,8 +1,8 @@
 ## Portfolio
-<img src="imgs/port/welcome.jpg"  align="left" style="display:inline-block; max-width:400; max-height:350;">
-<img src="imgs/port/projects.jpg" align="right" style="display:inline-block; max-width:400; max-height:350;">
-<img src="imgs/port/links.jpg" align="left" style="display:inline-block; max-width:400; max-height:350;">
-<img src="imgs/port/responsive.jpg" align="right" style="display:inline-block; max-width:400; max-height:350;">
+<img src="imgs/port/welcome.jpg"  align="left" style="display:inline-block; max-width:400px; max-height:350px;">
+<img src="imgs/port/projects.jpg" align="right" style="display:inline-block; max-width:400px; max-height:350px;">
+<img src="imgs/port/links.jpg" align="left" style="display:inline-block; max-width:400px; max-height:350px;">
+<img src="imgs/port/responsive.jpg" align="right" style="display:inline-block; max-width:400px; max-height:350px;">
 ## An overview of some projects 
 Included are:</br>
 	- Enterprise Resource Planner (ERP)</br>

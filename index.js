@@ -1,6 +1,5 @@
-
 //Called from arrows inside carousel
-//moves images left-or-right
+// & moves images left-or-right
 function moveImage(direction){
 
     //Calculate how much to move the images
@@ -22,12 +21,12 @@ function moveImage(direction){
     //If NOT at the end of the phots, move them left
         }else{
             singleImageWidth *= -(howMuchToMove);
-        //move the images
+    //move the images
             allImages.forEach((img) => {
                 img.style.left = singleImageWidth + 'px';
             })
 
-        //reset how many photos are left in the carousel
+    //reset how many photos are left in the carousel
             numberOfPhotosLeft = numberOfPhotosLeft - 1;
 
 
@@ -45,12 +44,12 @@ function moveImage(direction){
             let howMuchToMoveRight = howMuchToMove - 1;
             let howManyPxToMove = ( parseInt(howMuchToMoveRight) - 1 ) * singleImageWidth; 
 
-        //move the images
+    //move the images
             allImages.forEach((img) => {
                 img.style.left = -howManyPxToMove + 'px';
             })
 
-        //reset how many photos are left in the carousel
+    //reset how many photos are left in the carousel
             numberOfPhotosLeft = numberOfPhotosLeft + 1;
         }
 
@@ -159,7 +158,8 @@ function setNumberOfPhotos(directoryPath){
 
 }
 
-//1. Initial toggleModal
+//1. Initial toggleModal function called
+//   from html
 function toggleModal(imageLoc){
     let modal = document.getElementById('modal')
     let modalStyle = getComputedStyle(modal)['display'];
@@ -177,7 +177,7 @@ function toggleModal(imageLoc){
 }
 
 
-//Hold TOTAL number of photos in modal
+//Holds TOTAL number of photos in modal
 let numberOfPhotos = 0;
 
 

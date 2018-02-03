@@ -439,24 +439,18 @@ template {
 [hidden] {
   display: none; }
 
+/*
+  Tag Selectors
+*/
 * {
   box-sizing: border-box;
   text-align: center; }
 
-h1 {
-  font-family: "Helvetica Nueva";
-  font-weight: 400;
-  font-size: 2.5em;
-  color: #FFF; }
-
 a {
-  color: white; }
+  color: white;
+  text-decoration: none; }
   a:hover {
     outline: 1px solid blue; }
-
-.welcome {
-  margin-top: 200px;
-  font-size: 2em; }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -465,13 +459,19 @@ body {
   text-align: center;
   line-height: 1.5; }
 
-header {
-  padding: 12% 0; }
+h1 {
+  font-family: "Helvetica Nueva";
+  font-weight: 400;
+  font-size: 2.5em;
+  color: #FFF; }
 
 h2 {
   font-size: 2em;
   margin-bottom: 30px;
   margin-top: 30px; }
+
+header {
+  padding: 12% 0; }
 
 nav {
   background: black;
@@ -509,22 +509,42 @@ section {
   padding: 5px 10px 50px 10px;
   background-color: #212121; }
 
+i {
+  font-size: .8em;
+  font-style: italic; }
+
+/*
+  Class Selectors
+*/
 .aboutText {
   color: white;
   text-align: left; }
 
-.welcomeSec {
-  height: 700px;
-  background-image: url("imgs/page/welcome.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: cover;
-  background-color: #464646; }
-
 .inner {
   background-color: inherit;
   color: #252726; }
+
+.introText {
+  position: absolute;
+  color: #FFF;
+  bottom: 40px; }
+
+.linksWrapper {
+  margin: 100px 0 80px 0; }
+
+.project {
+  padding-bottom: 30px;
+  margin-bottom: 25px; }
+
+.projectImg {
+  width: 80%;
+  margin-bottom: 10px; }
+
+.projectImgWrapper {
+  height: 300px; }
+
+.projectTextWrapper {
+  margin-top: 120px; }
 
 .skillWrapper {
   display: inline-block;
@@ -540,18 +560,73 @@ section {
     display: inline-block;
     width: 45%; }
 
-a {
-  text-decoration: none; }
+.closeModal {
+  height: 55px;
+  width: 70%;
+  bottom: 30px;
+  border: 1px solid white;
+  left: 15%;
+  border-radius: 30px; }
 
-i {
-  font-size: .8em;
-  font-style: italic; }
+.contactLink {
+  height: 55px;
+  display: inline;
+  margin: 0 auto; }
 
-.introText {
+.contactTextWrapper {
+  text-align: left; }
+
+.linkImg {
+  height: 40px;
+  margin: 40px auto 0 auto;
+  display: block; }
+
+.modalButton {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50px;
+  border: none;
+  color: white;
   position: absolute;
-  color: #FFF;
-  bottom: 40px; }
+  right: 0; }
+  .modalButton.left {
+    left: 0; }
 
+.modalImage {
+  position: relative; }
+
+.modalTableCell {
+  vertical-align: middle; }
+
+.stackWrapper {
+  margin-bottom: 100px;
+  background-color: #9b9b9b;
+  border-radius: 50px; }
+
+.techImg {
+  max-width: 50px;
+  max-height: 50px;
+  margin: 0 10px; }
+
+.techWrapper {
+  margin-top: 300px; }
+
+.welcome {
+  margin-top: 200px;
+  font-size: 2em; }
+
+.welcomeSec {
+  height: 700px;
+  background-image: url("imgs/page/welcome.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: cover;
+  background-color: #464646; }
+
+/*
+  ID Selectors
+*/
 #erp {
   background-color: #C5B162; }
 
@@ -570,49 +645,6 @@ i {
 #jazz-quiz {
   background-color: #C5B162; }
 
-.project {
-  padding-bottom: 30px;
-  margin-bottom: 25px; }
-
-.projectImgWrapper {
-  height: 300px; }
-
-.projectTextWrapper {
-  margin-top: 120px; }
-
-.projectImg {
-  width: 80%;
-  margin-bottom: 10px; }
-
-.techWrapper {
-  margin-top: 300px; }
-
-.linksWrapper {
-  margin: 100px 0 80px 0; }
-
-.linkImg {
-  height: 40px;
-  margin: 40px auto 0 auto;
-  display: block; }
-
-.contactLink {
-  height: 55px;
-  display: inline;
-  margin: 0 auto; }
-
-.contactTextWrapper {
-  text-align: left; }
-
-.techImg {
-  max-width: 50px;
-  max-height: 50px;
-  margin: 0 10px; }
-
-.stackWrapper {
-  margin-bottom: 100px;
-  background-color: #9b9b9b;
-  border-radius: 50px; }
-
 #modal {
   width: 100%;
   height: 100%;
@@ -630,32 +662,7 @@ i {
     height: 100%;
     z-index: 25; }
 
-.modalButton {
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 50px;
-  border: none;
-  color: white;
-  position: absolute;
-  right: 0; }
-  .modalButton.left {
-    left: 0; }
-
-.closeModal {
-  height: 55px;
-  width: 70%;
-  bottom: 30px;
-  border: 1px solid white;
-  left: 15%;
-  border-radius: 30px; }
-
-.modalImage {
-  position: relative; }
-
-.modalTableCell {
-  vertical-align: middle; }
-
-/* Non-mobile, grid */
+/* Non-mobile, 'responsive' styles */
 @media only screen and (min-width: 640px) {
   nav {
     top: 0;
@@ -663,6 +670,12 @@ i {
 
   h2 {
     margin-bottom: 40px; }
+
+  section p, section h1, section div {
+    max-width: 1100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto; }
 
   .welcome {
     font-size: 5em;
@@ -674,15 +687,6 @@ i {
 
   .welcomeSec {
     height: 800px; }
-
-  section p, section h1, section div {
-    max-width: 1100px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto; }
-
-  #projects section {
-    padding-bottom: 0; }
 
   .project {
     overflow: hidden;
@@ -736,6 +740,9 @@ i {
     margin-top: 20px; }
 
   .stackWrapper {
-    width: 50%; } }
+    width: 50%; }
+
+  #projects section {
+    padding-bottom: 0; } }
 
 /*# sourceMappingURL=main.css.map */

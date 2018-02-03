@@ -2,33 +2,25 @@
 @import '_normalize';
 @import '_settings';
 
+/*
+  Tag Selectors
+*/
+
+
 * {
   box-sizing: border-box;
   text-align: center;
 }
 
-h1{
-  font-family: "Helvetica Nueva";
-  font-weight:400;
-  font-size: 2.5em;
-  color: #FFF;
-}
-
 a{
   color: white;
+  text-decoration: none;
     
     &:hover{
       outline: 1px solid blue;
     }
 
 }
-
-.welcome{
-  margin-top: 200px;
-  font-size: 2em;
-}
-
-
 
 body {
   font-family: "Open Sans",
@@ -39,14 +31,21 @@ body {
   line-height: 1.5;
 }
 
-header {
-  padding: 12% 0;
+h1{
+  font-family: "Helvetica Nueva";
+  font-weight:400;
+  font-size: 2.5em;
+  color: #FFF;
 }
 
 h2{
   font-size: 2em;
   margin-bottom: 30px;
   margin-top: 30px;
+}
+
+header {
+  padding: 12% 0;
 }
 
 nav {
@@ -62,24 +61,24 @@ nav {
   line-height: 45px;
 
   ul{
-	  margin: 0;
-	  padding: 0;
-	  display:block;
-	
-		a{
-		  color: white;
-		}
+    margin: 0;
+    padding: 0;
+    display:block;
+  
+    a{
+      color: white;
+    }
 
-		li {
-		  margin: 0 auto;
-		  list-style-type: none;
-		  display:inline-block;
-		  width: 32%;
-		  text-align: center;
-		  line-height: 45px;
-		}
+    li {
+      margin: 0 auto;
+      list-style-type: none;
+      display:inline-block;
+      width: 32%;
+      text-align: center;
+      line-height: 45px;
+    }
 
-	}
+  }
 }
 
 p {
@@ -94,9 +93,145 @@ section {
   background-color: #212121;
 }
 
+i{
+  font-size: .8em;
+  font-style: italic;
+}
+
+
+/*
+  Class Selectors
+*/
+
+
 .aboutText{
   color: white;
   text-align: left;  
+}
+
+.inner{
+  background-color:inherit;
+  color:#252726;
+}
+
+.introText{
+  position: absolute;
+  color: #FFF;
+  bottom: 40px;
+}
+
+.linksWrapper {
+  margin: 100px 0 80px 0;
+}
+
+
+.project{
+  padding-bottom: 30px;
+  margin-bottom: 25px;
+}
+
+.projectImg{
+  width:80%;
+  margin-bottom: 10px;
+}
+
+.projectImgWrapper{
+  height: 300px;
+}
+
+.projectTextWrapper{
+  margin-top:120px;
+}
+
+
+.skillWrapper{
+  display: inline-block;
+  margin: 10px 3%;
+  width: 33%;
+  height: 125px;
+
+  img {
+   width:95px;
+  }
+
+  h3 {
+    margin: 0;
+    line-height: 1;
+  }
+
+  a {
+    display: inline-block;
+    width: 45%;
+  }
+    
+}
+
+.closeModal{
+  height: 55px;
+  width: 70%;
+  bottom:30px;
+  border:1px solid white;
+  left: 15%;
+  border-radius: 30px;
+}
+
+.contactLink{
+  height:55px;
+  display: inline;
+  margin: 0 auto;
+}
+
+.contactTextWrapper{
+  text-align: left;
+}
+
+.linkImg{
+  height:40px;
+  margin: 40px auto 0 auto;
+  display: block;
+}
+
+.modalButton{
+  height:100%;
+  background-color: rgba(0,0,0,0.5);
+  width: 50px;
+  border:none;
+  color: white;
+  position: absolute;
+  right: 0;
+
+  &.left{
+    left: 0;
+  }
+}
+
+.modalImage{
+  position: relative;
+}
+
+.modalTableCell{
+  vertical-align: middle;
+}
+
+.stackWrapper{
+  margin-bottom: 100px;
+  background-color: rgba(155,155,155,1);
+  border-radius: 50px;
+}
+
+.techImg{
+  max-width: 50px;
+  max-height: 50px;
+  margin: 0 10px;
+}
+
+.techWrapper{
+  margin-top: 300px;
+}
+
+.welcome{
+  margin-top: 200px;
+  font-size: 2em;
 }
 
 .welcomeSec{
@@ -110,47 +245,11 @@ section {
 }
 
 
-.inner{
-  background-color:inherit;
-  color:#252726;
-}
+/*
+  ID Selectors
+*/
 
-.skillWrapper{
-  display: inline-block;
-  margin: 10px 3%;
-  width: 33%;
-  height: 125px;
 
-  img {
-   width:95px;
-  }
-
-  h3 {
-  	margin: 0;
-  	line-height: 1;
-  }
-
-  a {
-  	display: inline-block;
-  	width: 45%;
-  }
-    
-}
-
-a {
-  text-decoration: none;
-}
-
-i{
-  font-size: .8em;
-  font-style: italic;
-}
-
-.introText{
-  position: absolute;
-  color: #FFF;
-  bottom: 40px;
-}
 
 #erp{
   background-color: #C5B162;
@@ -174,61 +273,6 @@ i{
 
 #jazz-quiz{
   background-color: #C5B162;
-}
-
-.project{
-  padding-bottom: 30px;
-  margin-bottom: 25px;
-}
-
-.projectImgWrapper{
-  height: 300px;
-}
-
-.projectTextWrapper{
-  margin-top:120px;
-}
-
-.projectImg{
-  width:80%;
-  margin-bottom: 10px;
-}
-
-.techWrapper{
-  margin-top: 300px;
-}
-
-.linksWrapper {
-  margin: 100px 0 80px 0;
-}
-
-
-.linkImg{
-  height:40px;
-  margin: 40px auto 0 auto;
-  display: block;
-}
-
-.contactLink{
-  height:55px;
-  display: inline;
-  margin: 0 auto;
-}
-
-.contactTextWrapper{
-  text-align: left;
-}
-
-.techImg{
-  max-width: 50px;
-  max-height: 50px;
-  margin: 0 10px;
-}
-
-.stackWrapper{
-  margin-bottom: 100px;
-  background-color: rgba(155,155,155,1);
-  border-radius: 50px;
 }
 
 #modal{
@@ -256,38 +300,10 @@ i{
 
 }
 
-.modalButton{
-  height:100%;
-  background-color: rgba(0,0,0,0.5);
-  width: 50px;
-  border:none;
-  color: white;
-  position: absolute;
-  right: 0;
 
-  &.left{
-	  left: 0;
-	}
-}
+/* Non-mobile, 'responsive' styles */
 
-.closeModal{
-  height: 55px;
-  width: 70%;
-  bottom:30px;
-  border:1px solid white;
-  left: 15%;
-  border-radius: 30px;
-}
 
-.modalImage{
-	position: relative;
-}
-
-.modalTableCell{
-	vertical-align: middle;
-}
-
-/* Non-mobile, grid */
 @media only screen and (min-width: 640px) {
   
   nav{
@@ -297,6 +313,16 @@ i{
 
   h2{
     margin-bottom: 40px;
+  }
+
+  section{
+    p, h1, div{
+      max-width: 1100px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin: 0 auto;
+    }
+
   }
 
   .welcome{
@@ -313,37 +339,23 @@ i{
     height:800px;
   }
 
-  section{
-  	p, h1, div{
-	    max-width: 1100px;
-	    padding-left: 20px;
-	    padding-right: 20px;
-	    margin: 0 auto;
-    }
-
-  }
-
-  #projects section{
-  	padding-bottom: 0;
-  }
-
-  .project{
+.project{
     overflow: hidden;
     padding-top: 50px;
     margin-bottom: 50px;
     border-radius: 20px;
 
     section {
-	   	float: left;
-	    width:50%;
-	    vertical-align: top;
+      float: left;
+      width:50%;
+      vertical-align: top;
     }
 
-  	&:nth-child(odd){
+    &:nth-child(odd){
       
       .projectImgWrapper{
-  	 	 float: right;
-  	  }
+       float: right;
+      }
 
       p{
         text-align: right;
@@ -354,7 +366,7 @@ i{
   }
 
   .projectImgWrapper{
-  	height: 100%;
+    height: 100%;
   }
 
   .projectImg {
@@ -368,7 +380,7 @@ i{
     margin-top: 0px;
 
     p{
-    	text-align:left;
+      text-align:left;
     }
   }
 
@@ -404,4 +416,10 @@ i{
   .stackWrapper{
     width: 50%
   }
+
+  #projects section{
+  	padding-bottom: 0;
+  }
+
+  
 }

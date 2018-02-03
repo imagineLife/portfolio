@@ -1,8 +1,8 @@
 ## Portfolio Screenshots
 <img src="imgs/port/welcome.jpg"  align="left" style="display:inline-block;">
 <img src="imgs/port/projects.jpg" align="right" style="display:inline-block;">
-<img src="imgs/port/links.jpg" align="left" style="display:inline-block;">
-<img src="imgs/port/responsive.jpg" align="right" style="display:inline-block;">
+<img src="imgs/port/responsive.jpg" align="left" style="display:inline-block;">
+<img src="imgs/port/links.jpg" align="right" style="display:inline-block;">
 
 </br></br></br>
 ## An overview of some projects 

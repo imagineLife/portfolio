@@ -503,6 +503,10 @@ section {
   padding: 5px 10px 50px 10px;
   background-color: #212121; }
 
+.aboutText {
+  color: white;
+  text-align: left; }
+
 .welcomeSec {
   height: 700px;
   background-image: url(imgs/page/Hello.jpg);
@@ -600,7 +604,9 @@ i {
   margin: 0 10px; }
 
 .stackWrapper {
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  background-color: #9b9b9b;
+  border-radius: 50px; }
 
 #modal {
   width: 100%;
@@ -651,7 +657,7 @@ i {
     bottom: auto; }
 
   h2 {
-    margin-bottom: 50px; }
+    margin-bottom: 40px; }
 
   .welcome {
     font-size: 5em;
@@ -684,8 +690,8 @@ i {
       vertical-align: top; }
     .project:nth-child(odd) .projectImgWrapper {
       float: right; }
-      .project:nth-child(odd) .projectImgWrapper p {
-        text-align: right; }
+    .project:nth-child(odd) p {
+      text-align: right; }
 
   .projectImgWrapper {
     height: 100%; }
@@ -722,6 +728,9 @@ i {
     height: 100%; }
 
   .siteLink {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+
+  .stackWrapper {
+    width: 50%; } }
 
 /*# sourceMappingURL=main.css.map */

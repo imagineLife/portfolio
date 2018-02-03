@@ -1,6 +1,7 @@
 ## Portfolio
 <img src="imgs/port/welcome.jpg" width="400" align="left" style="display:inline-block;">
 <img src="imgs/port/projects.jpg" width="400" align="right" style="display:inline-block;">
+<br>
 <img src="imgs/port/links.jpg" width="400" align="left" style="display:inline-block;">
 <img src="imgs/port/responsive.jpg" width="400" align="right" style="display:inline-block;">
 ## An overview of some projects 

@@ -1,8 +1,8 @@
 ## Portfolio Screenshots
-<img src="imgs/port/welcome.jpg"  align="left" style="display:inline-block;">
-<img src="imgs/port/projects.jpg" align="right" style="display:inline-block;">
-<img src="imgs/port/responsive.jpg" align="left" style="display:inline-block;">
-<img src="imgs/port/links.jpg" align="right" style="display:inline-block;">
+![Welcome Screenshot](imgs/port/welcome.jpg "Welcome Screenshot")
+![Projects Screenshot](imgs/port/projects.jpg "Projects ScreenShot")
+![Responsive Screenshot](imgs/port/responsive.jpg "Responsive Design")
+![Links Screenshot](imgs/port/links.jpg "Links to Live apps")
 
 </br></br></br>
 ## An overview of some projects 

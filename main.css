@@ -560,14 +560,6 @@ i {
     display: inline-block;
     width: 45%; }
 
-.closeModal {
-  height: 55px;
-  width: 70%;
-  bottom: 30px;
-  border: 1px solid white;
-  left: 15%;
-  border-radius: 30px; }
-
 .contactLink {
   height: 55px;
   display: inline;
@@ -623,6 +615,14 @@ i {
   background-attachment: inherit;
   background-size: cover;
   background-color: #464646; }
+
+.closeModal {
+  height: 55px;
+  width: 70%;
+  bottom: 30px;
+  border: 1px solid white;
+  left: 15%;
+  border-radius: 30px; }
 
 /*
   ID Selectors

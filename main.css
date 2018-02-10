@@ -590,6 +590,9 @@ i {
 .modalTableCell {
   vertical-align: middle; }
 
+.navButton {
+  color: white; }
+
 .stackWrapper {
   margin-bottom: 100px;
   background-color: #9b9b9b;

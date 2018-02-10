@@ -520,6 +520,13 @@ i {
   color: white;
   text-align: left; }
 
+.buttonLink {
+  background-color: green;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50px; }
+
 .inner {
   background-color: inherit;
   color: #252726; }

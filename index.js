@@ -185,3 +185,13 @@ let numberOfPhotos = 0;
 //used for limiting the number of times
 // a user can click left-or-right
 let numberOfPhotosLeft = 0;
+
+
+//Scrolling function
+scrollTo = (element) => {
+  window.scroll({
+    behavior: 'smooth',
+    left: 0,
+    top: element.offsetTop
+  });
+}

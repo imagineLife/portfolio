@@ -449,8 +449,6 @@ template {
 a {
   color: white;
   text-decoration: none; }
-  a:hover {
-    outline: 1px solid blue; }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -458,6 +456,9 @@ body {
   color: #252726;
   text-align: center;
   line-height: 1.5; }
+
+button:focus {
+  outline: none; }
 
 h1 {
   font-family: "Helvetica Nueva";
@@ -573,7 +574,8 @@ i {
   margin: 0 auto; }
 
 .contactTextWrapper {
-  text-align: left; }
+  text-align: left;
+  color: white; }
 
 .linkImg {
   height: 40px;
@@ -598,7 +600,9 @@ i {
   vertical-align: middle; }
 
 .navButton {
-  color: white; }
+  color: white;
+  background-color: transparent;
+  border: none; }
 
 .stackWrapper {
   margin-bottom: 100px;
@@ -685,7 +689,7 @@ i {
     max-width: 1100px;
     padding-left: 20px;
     padding-right: 20px;
-    margin: 0 auto; }
+    margin: 15px auto; }
 
   .welcome {
     font-size: 5em;

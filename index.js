@@ -195,3 +195,15 @@ scrollTo = (element) => {
     top: element.offsetTop
   });
 }
+
+document.getElementById("projectsButton").addEventListener('click', () => {
+  scrollTo(document.getElementById("projects"));
+});
+
+document.getElementById("skillsButton").addEventListener('click', () => {
+  scrollTo(document.getElementById("skillset"));
+});
+
+document.getElementById("contactButton").addEventListener('click', () => {
+  scrollTo(document.getElementById("contact"));
+});

@@ -148,6 +148,10 @@ i{
 
 .projectImgWrapper{
   height: 300px;
+
+  &:hover{
+    cursor:pointer;
+  }
 }
 
 .projectTextWrapper{
@@ -210,6 +214,7 @@ i{
 
 .modalImage{
   position: relative;
+  vertical-align: middle;
 }
 
 .modalTableCell{
@@ -306,6 +311,7 @@ i{
 		
 		&:hover{
 		  background-color: rgba(0,0,0,.5);
+      cursor:pointer;
 		}
 
 	}

@@ -550,6 +550,8 @@ i {
 
 .projectImgWrapper {
   height: 300px; }
+  .projectImgWrapper:hover {
+    cursor: pointer; }
 
 .projectTextWrapper {
   margin-top: 120px; }
@@ -594,7 +596,8 @@ i {
     left: 0; }
 
 .modalImage {
-  position: relative; }
+  position: relative;
+  vertical-align: middle; }
 
 .modalTableCell {
   vertical-align: middle; }
@@ -670,7 +673,8 @@ i {
   #modal button {
     z-index: 30; }
     #modal button:hover {
-      background-color: rgba(0, 0, 0, 0.5); }
+      background-color: rgba(0, 0, 0, 0.5);
+      cursor: pointer; }
   #modal table {
     position: absolute;
     height: 100%;

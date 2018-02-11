@@ -597,7 +597,8 @@ i {
 
 .modalImage {
   position: relative;
-  vertical-align: middle; }
+  vertical-align: middle;
+  padding: 0 25px; }
 
 .modalTableCell {
   vertical-align: middle; }
@@ -745,7 +746,7 @@ i {
     width: 90px; }
 
   .modalImage {
-    padding: 0 300px;
+    padding: 0 275px;
     vertical-align: middle; }
 
   .techImg {

@@ -457,6 +457,9 @@ body {
   text-align: center;
   line-height: 1.5; }
 
+nav ul li, nav ul li button {
+  cursor: pointer; }
+
 button:focus {
   outline: none; }
 

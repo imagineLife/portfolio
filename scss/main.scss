@@ -26,6 +26,10 @@ body {
   line-height: 1.5;
 }
 
+nav ul li, nav ul li button {
+  cursor: pointer;
+}
+
 button{
   
   &:focus{

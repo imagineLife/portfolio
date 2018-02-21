@@ -765,10 +765,16 @@ section.projectImgWrapper {
     margin-top: 20px; }
 
   .stackWrapper {
-    width: 80%; }
+    width: 80%;
+    padding: 20px 0; }
 
   #projects section {
     padding-bottom: 0;
     min-height: 100px; } }
+@media only screen and (min-width: 700px) {
+  .stackWrapper {
+    width: 45%;
+    display: inline-block;
+    margin: 50px  20px; } }
 
 /*# sourceMappingURL=main.css.map */

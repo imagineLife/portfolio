@@ -726,8 +726,6 @@ section.projectImgWrapper {
       vertical-align: top; }
     .project:nth-child(odd) .projectImgWrapper {
       float: right; }
-    .project:nth-child(odd) p {
-      text-align: right; }
 
   .projectImgWrapper {
     height: 100%; }

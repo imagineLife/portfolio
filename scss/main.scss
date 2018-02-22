@@ -194,7 +194,8 @@ section.projectImgWrapper{
 
 .contactTextWrapper{
   text-align: left;
-  color: white
+  color: white;
+  display: inline-block;
 }
 
 .linkImg{
@@ -377,7 +378,7 @@ section.projectImgWrapper{
     height:800px;
   }
 
-.project{
+  .project{
     overflow: hidden;
     padding-top: 50px;
     margin-bottom: 50px;

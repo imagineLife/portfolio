@@ -581,7 +581,8 @@ section.projectImgWrapper {
 
 .contactTextWrapper {
   text-align: left;
-  color: white; }
+  color: white;
+  display: inline-block; }
 
 .linkImg {
   height: 40px;

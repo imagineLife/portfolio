@@ -504,7 +504,7 @@ nav {
       line-height: 45px; }
 
 p {
-  margin: 20px 3%;
+  margin: 0 3%;
   line-height: 1.75;
   font-size: 1.25rem; }
 
@@ -532,6 +532,9 @@ i {
   border-radius: 50px;
   max-width: 500px;
   margin: 0 auto; }
+
+.contactText {
+  padding: 0; }
 
 .inner {
   background-color: inherit;
@@ -585,7 +588,7 @@ section.projectImgWrapper {
 .contactTextWrapper {
   text-align: left;
   color: white;
-  display: inline-block; }
+  display: initial; }
 
 .linkImg {
   height: 40px;
@@ -707,6 +710,9 @@ section.projectImgWrapper {
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto; }
+
+  .contactTextWrapper {
+    display: inline-block; }
 
   .welcome {
     font-size: 5em;

@@ -577,9 +577,10 @@ section.projectImgWrapper {
     width: 45%; }
 
 .contactLink {
-  height: 55px;
+  height: 50px;
   display: inline;
-  margin: 0 auto; }
+  margin: 0 auto;
+  vertical-align: bottom; }
 
 .contactTextWrapper {
   text-align: left;

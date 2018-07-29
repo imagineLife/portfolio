@@ -152,6 +152,13 @@ function setNumberOfPhotos(directoryPath){
             numberOfPhotosLeft = 2;
             getFileNamesFromDirectory(numberOfPhotos,directoryPath);        
             return;
+
+        case ('./imgs/ristats/') :
+            numberOfPhotos = 3;
+            numberOfPhotosLeft = 2;
+            getFileNamesFromDirectory(numberOfPhotos,directoryPath);        
+            return;
+
 		default:
 			return; 
 	}

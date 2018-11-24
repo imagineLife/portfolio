@@ -159,6 +159,12 @@ function setNumberOfPhotos(directoryPath){
             getFileNamesFromDirectory(numberOfPhotos,directoryPath);        
             return;
 
+        case ('./imgs/worldmap/') :
+            numberOfPhotos = 3;
+            numberOfPhotosLeft = 2;
+            getFileNamesFromDirectory(numberOfPhotos,directoryPath);        
+            return;
+
 		default:
 			return; 
 	}
@@ -168,13 +174,16 @@ function setNumberOfPhotos(directoryPath){
 //1. Initial toggleModal function called
 //   from html
 function toggleModal(imageLoc){
+    console.log('toggleModal, imageLoc')
+    console.log(imageLoc)
     let modal = document.getElementById('modal')
     let modalStyle = getComputedStyle(modal)['display'];
 
 
     if(modalStyle === 'none'){
     	let curImageDirectory = imageLoc.getAttribute("data-imageloc");
-
+        console.log('curImageDirectory')
+        console.log(curImageDirectory)
     	setNumberOfPhotos(curImageDirectory);
 
     }else{

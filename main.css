@@ -687,7 +687,7 @@ section.projectImgWrapper {
 }
 
 #node-api{
-  background-color: rgb(80,200,200);
+  background-color: rgb(148,197,183);
 }
 
 #modal {
@@ -768,7 +768,7 @@ section.projectImgWrapper {
       text-align: left; }
 
   .techWrapper {
-    margin-top: 90%;
+    margin-top: 70%;
     background-color: inherit;
     padding-top: 10px;
     width: calc(100% + 20px);

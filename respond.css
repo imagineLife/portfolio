@@ -131,10 +131,7 @@
 
   section div.caption p {
     padding: 0 2%;
-  }
-
-  .sub-text{
-    font-size: 1em;
+    font-size: .9em;
     line-height: 1.2;
   }
 }
@@ -148,5 +145,10 @@
 
   .caption{
     padding: 20px 10px 21px 10px;
+  }
+
+  .sub-text{
+    font-size: 1.2em;
+    line-height: 1.2;
   }
 }

@@ -1,0 +1,147 @@
+/* Non-mobile, 'responsive' styles */
+
+@media only screen and (min-width: 440px) {
+  section.welcome{
+    height: 500px;
+  }
+
+  .tech-list-box{
+    padding: 10px 15px;
+    margin: 5px 0 0 0;
+    background-color: unset;
+  }
+
+  .text-box{
+    position: absolute;
+    bottom: 15px;
+    margin-top: 300px;
+    padding: 15px;
+    color: white;
+  }
+
+  section.projectImgWrapper {
+    background-size: cover;
+    background-position: unset;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  nav {
+    top: 0;
+    bottom: auto;
+  }
+  h2 {
+    margin-bottom: 40px;
+  }
+  section p,
+  section h1,
+  section div,
+  section ul {
+    max-width: 1100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+  }
+  .contactTextWrapper {
+    display: inline-block;
+  }
+  .introText {
+    margin-top: 150px;
+    position: relative;
+  }
+  section.welcome {
+    height: 600px;
+  }
+  h1.welcome {
+    font-size: 2em;
+    display: inline-block;
+    width: 100%;
+    margin: 50px auto 0 auto;
+  }
+  .project {
+    overflow: hidden;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+  }
+  .project section {
+    float: left;
+    width: 50%;
+    vertical-align: top;
+  }
+  .project:nth-child(odd) .projectImgWrapper {
+    float: right;
+  }
+  .projectImgWrapper {
+    height: 100%;
+  }
+  .projectImg {
+    max-width: 600px;
+    max-height: 600px;
+    height: auto;
+    width: auto;
+  }
+  .projectTextWrapper {
+    margin-top: 0px;
+  }
+  .projectTextWrapper p {
+    text-align: left;
+  }
+  .techWrapper {
+    margin-top: 70%;
+    background-color: inherit;
+    padding-top: 10px;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+  }
+  .modalButton.left,
+  .modalButton.right {
+    width: 90px;
+  }
+  .modalImage {
+    padding: 0 275px;
+    vertical-align: middle;
+  }
+  .techImg {
+    margin: 0 30px;
+  }
+  .image {
+    height: 100%;
+  }
+  .siteLink {
+    margin-top: 20px;
+  }
+  .stackWrapper {
+    width: 80%;
+    padding: 20px 0;
+  }
+  #projects section {
+    padding-bottom: 0;
+    min-height: 100px;
+  }
+
+  .tech-list{
+    width: 46%;
+    display: inline-block;
+  }
+
+  .tech-list:nth-child(even){
+    margin-left: 7%
+  }
+
+  section div.caption p {
+    padding: 0 2%;
+  }
+}
+
+@media only screen and (min-width: 880px) {
+  .stackWrapper {
+    width: 45%;
+    display: inline-block;
+    margin: 50px 20px;
+  }
+
+  .caption{
+    padding: 20px 10px 21px 10px;
+  }
+}

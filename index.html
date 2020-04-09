@@ -1,725 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="main.css">
-</head>
-<body>
-
-<!-- Navigation -->
-
-    <nav role="navigation">
-        <ul>
-            
+   <head>
+      <meta charset="UTF-8">
+      <title>Folio</title>
+      <!-- Responsive viewport tag, tells small screens that it's responsive -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Stylesheets -->
+<!--       <link rel="stylesheet" href="./../resetNormalize.css" /> -->
+      <link rel="stylesheet" href="./float-grid.css" />
+      <link rel="stylesheet" href="./index.css" />
+      <link rel="stylesheet" href="./respond.css" />
+      <link rel="stylesheet" href="./v2-hover.css" />
+   </head>
+   <body>
+      <!-- Navigation -->
+      <nav role="navigation">
+         <ul>
             <li>
-                <button id="projectsButton" class="navButton">Projects</button>
-            </li>                
-
+               <button id="projectsButton" class="navButton">Projects</button>
+            </li>
             <li>
-                <button id="skillsButton" class="navButton">Skills/About</button>
-            </li> 
-
+               <button id="skillsButton" class="navButton">Skills/About</button>
+            </li>
             <li>
-                <button id="contactButton" class="navButton">Contact</button>
-            </li> 
-
-        </ul>
-    </nav>
-
-    <main role="main">
-
-<!-- Welcome -->
-
-        <section class="welcomeSec">
-                <h1 class="welcome">Welcome</h1>
-                <p class="introText">My name is Eric, & I'm a web-based software developer & fan of data visualization. I'm currently enjoying working with D3, React, Node, Mongo, SQL, and all things JavaScript.</p>
-        </section>
-
-<!-- Projects -->
-
-        <section id="projects">
-
-            <h1 class="headerH1">Projects</h1>
-
-    <!-- vinFinder -->
-
-           <!--  <div id="vinFinder" class="project">
-            
-                <section class="inner projectImgWrapper" style="background-image: url(./imgs/vinFinder.jpg); background-size: cover;" data-imageLoc="./imgs/vinFinder/" onClick="toggleModal(this)">
-                    
-                    <div class="techWrapper">
-                
-                        <img src="./imgs/Wordpress.png" alt="Wordpress" class="techImg">
-                        <img src="./imgs/ResponsiveDesign.png" alt="ResponsiveDesign" class="techImg">
-                        <img src="./imgs/DHTMLX.jpg" alt="DHTMLX" class="techImg">
-                        <br>
-                        <img src="./imgs/JavaScript.png" alt="JavaScript" class="techImg">
-                        <img src="./imgs/HTML5.png" alt="HTML5" class="techImg">
-                        <img src="./imgs/CSS3.png" alt="CSS3" class="techImg">
-                
-                    </div> 
-
-                </section>
-
-                <section class="inner projectTextWrapper">
-
-                    <h2>vinFinder</h2>
-
-                    <p>
-                        This is a tool for checking a vin number of a vehicle against a database to verify if the vehicle has raced in prestigious races in the past. 
-                    </p>
-                    <p>
-                        <b>Problem:</b> The business owner needed a way to instantaneously identifying the history of a vehicle, while standing in someone's garage or barn, by its vin number.
-                    </p>
-                    <p>
-                        <b>Solution:</b> This app allowed for quick and constant access to an cloud-based database of records regarding cars with race history.
-                    </p>
-                    <p>
-                        <i>Due to the proprietary nature of this project and the data included, I can not show screenshots of the project. The functionality is such that a vin number, or a portion of a vin number, can be entered in the app, and if the vehicle raced a prestigious race data regarding the race history displays on screen.</i>
-                    </p>
-
-                </section>           
-            
+               <button id="contactButton" class="navButton">Contact</button>
+            </li>
+         </ul>
+      </nav>
+      <main role="main">
+         <!-- Welcome -->
+         <section class="welcome">
+            <div class="text-box">
+               <p class="intro-text">
+                  <b>Welcome</b><br>
+                  Friends & Family call me Jake. <br>I make web-based software. <br>
+                  I also enjoy making data visualizations.<br>
+               </p>
+               <div class="tech-list-box">
+                  <ul class="tech-list">
+                     <li class="tech-li title"><b>Frontend</b></li>
+                     <br>
+                     <li class="tech-li">D3</li>
+                     <li class="tech-li">React</li>
+                     <li class="tech-li">Webpack</li>
+                     <li class="tech-li">Wireframing</li>
+                     <li class="tech-li">JS</li>
+                     <li class="tech-li">Responsive Design</li>
+                     <li class="tech-li">Enzyme</li>
+                     <li class="tech-li">Jest</li>
+                     <li class="tech-li">Cypress</li>
+                     <li class="tech-li">Travis-CI</li>
+                  </ul>
+                  <ul class="tech-list">
+                     <li class="tech-li title"><b>Server</b></li>
+                     <br>
+                     <li class="tech-li">Node</li>
+                     <li class="tech-li">Express</li>
+                     <li class="tech-li">Postman</li>
+                     <li class="tech-li">Swagger</li>
+                     <li class="tech-li">REST API</li>
+                     <li class="tech-li">Socket.io</li>
+                     <li class="tech-li">JWT</li>
+                     <li class="tech-li">Mocha</li>
+                     <li class="tech-li">Chai</li>
+                  </ul>
+                  <ul class="tech-list">
+                     <li class="tech-li title"><b>DataBase</b></li>
+                     <br>
+                     <li class="tech-li">MongoDB</li>
+                     <li class="tech-li">PostGreSQL</li>
+                     <li class="tech-li">MySQL</li>
+                  </ul>
+                  <ul class="tech-list">
+                     <li class="tech-li title"><b>Team</b></li>
+                     <br>
+                     <li class="tech-li">Certified Professional Scrum Master</li>
+                     <li class="tech-li">Git</li>
+                     <li class="tech-li">GitLab</li>
+                     <li class="tech-li">StrengthFinder Advocate</li>
+                     <li class="tech-li">INTJ</li>
+                  </ul>
+               </div>
             </div>
- -->
-    <!-- Mastering D3 -->
-
-            <div id="Mastering-D3" class="project">
-               
-                <section class="inner projectImgWrapper" style="background-image: url(./imgs/masteringD3.jpg); background-size: contain; background-repeat: no-repeat; background-position: center;" >
-                    <!-- data-imageLoc="./imgs/say-what/" onClick="toggleModal(this)" -->
-                    
-                    <div class="techWrapper">
-                        <img src="./imgs/teaching.png" alt="Teaching" class="techImg">
-                        <img src="./imgs/dataMining.png" alt="Data Mining" class="techImg">
-                        <img src="./imgs/D3js.png" alt="D3" class="techImg">
-                        <img src="./imgs/ResponsiveDesign.png" alt="ResponsiveDesign" class="techImg">
-                        <br>
-                        <img src="./imgs/api.png" alt="Custom Developed API" class="techImg">
-                        <img src="./imgs/JavaScript.png" alt="JavaScript" class="techImg">
-                        <img src="./imgs/HTML5.png" alt="HTML5" class="techImg">
-                        <img src="./imgs/CSS3.png" alt="CSS3" class="techImg">
-                
-                    </div> 
-
-                </section>     
-                
-                <section class="inner projectTextWrapper">
-                
-                    <h2>Mastering D3.js v5</h2>
-
-                    <p>Here's a course where I teach details about D3, the javascript 'data visualization library'. Here, students learn to build interactive maps & legends, hierarchical visualizations, linked visualizations that respond to user interaction in unison, & more!</p>
-
-                    <div class="linksWrapper">
-                
-                        <a href="https://www.packtpub.com/big-data-and-business-intelligence/mastering-d3js-5-video" target="_blank" class="buttonLink">
-                            Go to the course page!
-                        </a>
-                
-                    </div>
-
-                </section>
-
+         </section>
+         <!-- Responsive Blocks -->
+         <section id="projects-wrapper">
+            <div class="col-3-4 hover-v2">
+               <div target="_blank" class="box psmi-bg">
+                  <div class="caption">
+                     <p>Professional Scrum Master <i>(Certified)</i></p>
+                     <hr />
+                     <p class="sub-text">Scrum is a framework that teams can use to enable team-wide transparency, inspection & adaptation while developing & delivering complex products.</p>
+                     <a href="https://www.scrum.org/certificates/519854" target="_blank"class="open"></a>
+                     <ul>
+                        <li>Team Process Framework</li>
+                        <li>Servant Leadership</li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-
-     <!-- NPM-less node api -->
-
-            <div id="node-api" class="project">
-               
-                <section class="inner projectImgWrapper" style="background-image: url(./imgs/nodeServer.jpg); background-size: contain; background-repeat: no-repeat; background-position: center;" >
-                    <!-- data-imageLoc="./imgs/say-what/" onClick="toggleModal(this)" -->
-                    
-                    <div class="techWrapper">
-                        <br>
-                        <img src="./imgs/Node.png" alt="Node" class="techImg">
-                        <img src="./imgs/JavaScript.png" alt="JavaScript" class="techImg">
-                        <img src="./imgs/HTML5.png" alt="HTML5" class="techImg">
-                        <img src="./imgs/CSS3.png" alt="CSS3" class="techImg">
-                
-                    </div> 
-
-                </section>     
-                
-                <section class="inner projectTextWrapper">
-                
-                    <h2>Pizza Delivery Node API</h2>
-
-                    <p><b>No NPM. No Packages. Built using the node API & JavaScript.</b><br>
-                    Includes an integrated CLI, CRUD file operations, token hashing, logging (compression && decompression), user data & authentication, integrating with 3rd party apis (for charging customers && sending emails), serving frontend files (html, css & js), & more!</p>
-
-                    <div class="linksWrapper">
-                
-                        <a href="https://github.com/imagineLife/nodeWork/tree/master/pizzaAPI" target="_blank" class="buttonLink">
-                            See the Code!
-                        </a>
-                
-                    </div>
-
-                </section>
-
+            <div class="col-3-4 hover-v2">
+               <div target="_blank" class="box slice-n-dice-bg">
+                  <div class="caption">
+                     <p>Slice-'n-Dice Times</p>
+                     <hr />
+                     <p class="sub-text">An interactive newspaper-influenced UI, analyzing textual themes in the president's Innaugural Address.</p>
+                     <a href="https://slice-n-dice-times.herokuapp.com/" target="_blank"class="open"></a>
+                     <ul>
+                        <li>D3</li>
+                        <li>Data Vizualization</li>
+                        <li>React</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Data Analysis</li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-
-    <!-- sayWhat -->
-
-            <div id="say-what" class="project">
-               
-                <section class="inner projectImgWrapper" style="background-image: url(./imgs/say-what/1.jpg); background-size: contain; background-repeat: no-repeat; background-position: center;" data-imageLoc="./imgs/say-what/" onClick="toggleModal(this)">
-                    
-                    <div class="techWrapper">
-                
-                        <img src="./imgs/React.png" alt="React" class="techImg">
-                        <img src="./imgs/redux.png" alt="Redux" class="techImg">
-                        <img src="./imgs/Node.png" alt="Node" class="techImg">
-                        <img src="./imgs/ResponsiveDesign.png" alt="ResponsiveDesign" class="techImg">
-                        <br>
-                        <img src="./imgs/api.png" alt="Custom Developed API" class="techImg">
-                        <img src="./imgs/JavaScript.png" alt="JavaScript" class="techImg">
-                        <img src="./imgs/HTML5.png" alt="HTML5" class="techImg">
-                        <img src="./imgs/CSS3.png" alt="CSS3" class="techImg">
-                
-                    </div> 
-
-                </section>     
-                
-                <section class="inner projectTextWrapper">
-                
-                    <h2>SayWhat?!</h2>
-
-                    <p>Understand presidential inaugural adresses through the lens of data-visualization. See some interesting statistics uncovered through analytics. This fueatures data visualization & data mining.</p>
-
-                    <div class="linksWrapper">
-                
-                        <a href="https://say-what.netlify.com/" target="_blank" class="buttonLink">
-                            See the site!
-                        </a>
-                
-                        <a href="https://github.com/imagineLife/say-what" target="_blank">
-                            <img src="./imgs/github.png" class="linkImg">
-                            See the code!
-                        </a> 
-                
-                    </div>
-
-                </section>
-
+            <div class="col-3-4 hover-v2">
+               <div target="_blank" class="box mastering-bg">
+                  <div class="caption">
+                     <p>Mastering D3v5</p>
+                     <hr />
+                     <p class="sub-text">An online course I created covering D3v5, interactive mapping, linked visualizations, 3rd party api integration & more.</p>
+                     <a href="https://www.ntuclearninghub.com/udemy/course/?id=2421558" target="_blank"class="open"></a>
+                     <ul>
+                        <li>D3</li>
+                        <li>Data Vizualization</li>
+                        <li>Curriculum Development</li>
+                        <li>Audio/Video Recording & Editing</li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-
-    <!-- World Map -->
-
-            <div id="worldMap" class="project">
-               
-                <section class="inner projectImgWrapper" style="background-image: url(./imgs/worldmap/1.jpg); background-size: contain; background-repeat: no-repeat; background-position: center;" data-imageLoc="./imgs/worldmap/" onClick="toggleModal(this)">
-                    
-                    <div class="techWrapper">
-                
-                        <img src="./imgs/dataMining.png" alt="Data Mining" class="techImg">
-                        <img src="./imgs/analytics.png" alt="Analytics" class="techImg">
-                        <img src="./imgs/ResponsiveDesign.png" alt="ResponsiveDesign" class="techImg">
-                        <br>
-                        <img src="./imgs/D3js.png" alt="D3" class="techImg">
-                        <img src="./imgs/JavaScript.png" alt="JavaScript" class="techImg">
-                        <img src="./imgs/HTML5.png" alt="HTML5" class="techImg">
-                        <img src="./imgs/CSS3.png" alt="CSS3" class="techImg">
-                
-                    </div> 
-
-                </section>     
-                
-                <section class="inner projectTextWrapper">
-                
-                    <h2>World Map</h2>
-
-                    <p>This map shows the countires of the world categorized by level of economic development. This features color-coded categorization, a selectable legend that highlights countries, a hover interaction on the countries, zooming, & panning.</p>
-
-                    <div class="linksWrapper">
-                
-                        <a href="https://imaginelife.github.io/worldMap/" target="_blank" class="buttonLink">
-                            See the site!
-                        </a>
-                
-                        <a href="https://github.com/imagineLife/worldMap" target="_blank">
-                            <img src="./imgs/github.png" class="linkImg">
-                            See the code!
-                        </a> 
-                
-                    </div>
-
-                </section>
-
+            <div class="col-3-4 hover-v2">
+               <div 
+                  class="box pizza-bg"
+                  href="https://github.com/imagineLife/nodeWork/tree/master/pizzaAPI"
+                  target="_blank">
+                  <div class="caption" >
+                     <p>Restaurant Node API</p>
+                     <hr />
+                     <p class="sub-text">An API using core Node API, no npm: account & cart management <i>(CRUD)</i>, a cli, auth, <i>stripe & mailgun api</i> integration, logging & more.</p>
+                     <a href="https://github.com/imagineLife/nodeWork/tree/master/pizzaAPI" target="_blank"class="git"></a>
+                     <ul>
+                        <li>Node</li>
+                        <li>JavaScript</li>
+                        <li>Auth</li>
+                        <li>Encryption</li>
+                        <li>Compression + Decompression</li>
+                        <li>cli</li>
+                        <li>logging</li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-
-    <!-- Rhod Island Analysis -->
-
-            <div id="rhodeIslandStats" class="project">
-               
-                <section class="inner projectImgWrapper" style="background-image: url(./imgs/ristats/1.jpg); background-size: contain; background-repeat: no-repeat; background-position: center;" data-imageLoc="./imgs/ristats/" onClick="toggleModal(this)">
-                    
-                    <div class="techWrapper">
-                
-                        <img src="./imgs/dataMining.png" alt="Data Mining" class="techImg">
-                        <img src="./imgs/analytics.png" alt="Analytics" class="techImg">
-                        <img src="./imgs/ResponsiveDesign.png" alt="ResponsiveDesign" class="techImg">
-                        <br>
-                        <img src="./imgs/D3js.png" alt="D3" class="techImg">
-                        <img src="./imgs/JavaScript.png" alt="JavaScript" class="techImg">
-                        <img src="./imgs/HTML5.png" alt="HTML5" class="techImg">
-                        <img src="./imgs/CSS3.png" alt="CSS3" class="techImg">
-                
-                    </div> 
-
-                </section>     
-                
-                <section class="inner projectTextWrapper">
-                
-                    <h2>Rhode Island Income & Poverty Statistics</h2>
-
-                    <p>This is a brief examination of Income & Poverty statistics in Rhode Island. Some details covered are poverty by town & poverty by race. This features varieties of choropleth mapping, linked filterable visualzations, and responsive design.</p>
-
-                    <div class="linksWrapper">
-                
-                        <a href="https://imaginelife.github.io/ristats/" target="_blank" class="buttonLink">
-                            See the site!
-                        </a>
-                
-                        <a href="https://github.com/imagineLife/ristats" target="_blank">
-                            <img src="./imgs/github.png" class="linkImg">
-                            See the code!
-                        </a> 
-                
-                    </div>
-
-                </section>
-
+            <div class="col-3-4 hover-v2">
+               <div class="box say-what-bg">
+                  <div class="caption">
+                     <p>SayWhat?!</p>
+                     <hr />
+                     <p class="sub-text">Look at patterns in the text of presidential inaugural addresses in this data-viz focused, full-stack, mobile-first responsive project.</p>
+                     <div class="link-box">
+                        <a href="https://say-what.netlify.com/" target="_blank"class="open"></a>
+                        <a href="https://github.com/imagineLife/say-what" target="_blank"class="git"></a>
+                     </div>
+                     <ul>
+                        <li>D3</li>
+                        <li>React</li>
+                        <li>MongoDB</li>
+                        <li>Express <i>(Node)</i></li>
+                        <li>Data Visualization</li>
+                        <li>Responsive Design</li>
+                        <li>Text Analysis</li>
+                        <li>HTML</li>
+                        <li>JS</li>
+                        <li>CSS</li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-
-    <!-- CT Permits -->
-
-            <div id="ctPermits" class="project">
-               
-                <section class="inner projectImgWrapper" style="background-image: url(./imgs/ctPermits/1.jpg); background-size: contain; background-repeat: no-repeat; background-position: center;" data-imageLoc="./imgs/ctPermits/" onClick="toggleModal(this)">
-                    
-                    <div class="techWrapper">
-                
-                        <img src="./imgs/dataMining.png" alt="Data Mining" class="techImg">
-                        <img src="./imgs/analytics.png" alt="Analytics" class="techImg">
-                        <img src="./imgs/ResponsiveDesign.png" alt="ResponsiveDesign" class="techImg">
-                        <br>
-                        <img src="./imgs/D3js.png" alt="D3" class="techImg">
-                        <img src="./imgs/JavaScript.png" alt="JavaScript" class="techImg">
-                        <img src="./imgs/HTML5.png" alt="HTML5" class="techImg">
-                        <img src="./imgs/CSS3.png" alt="CSS3" class="techImg">
-                
-                    </div> 
-
-                </section>     
-                
-                <section class="inner projectTextWrapper">
-                
-                    <h2>CT Housing Permits Issued By Town</h2>
-
-                    <p>This was made for a friend who works in the house-building & selling industry. This is a brief look at the number of housing building permits issued by the state in 2018. This features choropleth mapping, user interaction, data mining & research.</p>
-
-                    <div class="linksWrapper">
-                
-                        <a href="https://imaginelife.github.io/stateHousingPermits/" target="_blank" class="buttonLink">
-                            See the site!
-                        </a>
-                
-                        <a href="https://github.com/imagineLife/stateHousingPermits" target="_blank">
-                            <img src="./imgs/github.png" class="linkImg">
-                            See the code!
-                        </a> 
-                
-                    </div>
-
-                </section>
-
-            </div>            
-
-    <!-- ERP -->
-
-            <div id="erp" class="project">
-           
-    
-               <section class="inner projectImgWrapper" style="background-image: url(./imgs/erp/1.jpg); background-size: contain; background-repeat: no-repeat; background-position: center;" data-imageLoc="./imgs/erp/" onClick="toggleModal(this)">
-
-                    <div class="techWrapper">
-                
-                        <img src="./imgs/DHTMLX.jpg" alt="DHTMLX" class="techImg">
-                        <img src="./imgs/php.png" alt="PHP" class="techImg">
-                        <img src="./imgs/ResponsiveDesign.png" alt="ResponsiveDesign" class="techImg">
-                        <img src="./imgs/JavaScript.png" alt="JavaScript" class="techImg">
-                        <img src="./imgs/HTML5.png" alt="HTML5" class="techImg">
-                        <img src="./imgs/CSS3.png" alt="CSS3" class="techImg">
-                        <img src="./imgs/MySQL.png" alt="MySQL" class="techImg">
-                        <img src="./imgs/apache.png" alt="Apache" class="techImg">
-                
-                    </div>           
-
-                </section>
-
-               <section class="inner projectTextWrapper" >
-                    
-                <h2 class="projectTitle">Enterprise Resource Planner</h2>
-
-               
-                <p>
-                    This is a tool that I led a re-factoring development effort on for a small IT support business. 
-                </p>
-                <p>
-                    <b>Problem:</b> The business was tired of its prior disintegrated systems for managing employees, work-tickets, time management and client management. 
-                </p>
-                <p>
-                    <b>Solution:</b> I led the building of this system, centralizing employee ticket management, work activity & assignment, invoice development, & business analytics.
-                </p>
-
-                <p>
-                    <i>Due to the proprietary nature of the data included, the screenshots have the text content removed. I do not have permission to show the entire project or link to its content.</i>
-                </p>
-
-               </section>
-
+            <div class="col-3-4 hover-v2">
+               <div 
+                  class="box world-map-bg" 
+                  href="https://imaginelife.github.io/worldMap/"
+                  target="_blank">
+                  <div class="caption">
+                     <p>WEO Country Categories Mapped</p>
+                     <hr />
+                     <p class="sub-text">Zoom, toggle, & hover in this map of the countries of the world categorically colored by their GNI per capita.</p>
+                     <div class="link-box">
+                        <a href="https://imaginelife.github.io/worldMap/" target="_blank"class="open"></a>
+                        <a href="https://github.com/imagineLife/worldMap" target="_blank"class="git"></a>
+                     </div>
+                     <ul>
+                        <li>D3</li>
+                        <li>Mapping</li>
+                        <li>GeoJSON <i>(topJSON)</i></li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Data Visualization</li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-
-    <!-- macroRecipes -->
-
-            <div id="macro-recipes" class="project">
-                               
-                <section class="inner projectImgWrapper" style="background-image: url(./imgs/macro/1.jpg); background-size: contain; background-repeat: no-repeat; background-position: center;" data-imageLoc="./imgs/macro/" onClick="toggleModal(this)">
-
-                    <div class="techWrapper">
-                
-                        <img src="./imgs/Node.png" alt="Node" class="techImg">
-                        <img src="./imgs/ResponsiveDesign.png" alt="ResponsiveDesign" class="techImg">
-                        <img src="./imgs/api.png" alt="3rd Party API Integration" class="techImg">
-                        <img src="./imgs/jquery.png" alt="jQuery" class="techImg">
-                        <br>
-                        <img src="./imgs/JavaScript.png" alt="JavaScript" class="techImg">
-                        <img src="./imgs/HTML5.png" alt="HTML5" class="techImg">
-                        <img src="./imgs/CSS3.png" alt="CSS3" class="techImg">
-                
-                    </div>           
-                
-                </section>
-
-                <section class="inner projectTextWrapper">
-
-                    <h2>MacroRecipes</h2>
-
-                    <p>Looking for a nutritious recipe and only have a seemingly oddball set of ingredients to work with?</p>
-                    <p>This is the app for you. Search for a recipe by ingredient and nutrient values. Check out some new recipes you may not have thought of!</p>
-
-
-                    <div class="linksWrapper">
-                
-                        <a href="https://imaginelife.github.io/MacroRecipes/" target="_blank" class="buttonLink">
-                            See the site!
-                        </a>
-                
-                        <a href="https://github.com/imagineLife/MacroRecipes" target="_blank">
-                            <img src="./imgs/github.png" class="linkImg">
-                            See the code!
-                        </a> 
-                
-                    </div>
-
-                </section>
-
-            </div>            
-
-    <!-- myMiles -->
-
-            <div id="my-miles" class="project">
-               
-                <section class="inner projectImgWrapper" style="background-image: url(./imgs/miles/1.jpg); background-size: contain; background-repeat: no-repeat; background-position: center;" data-imageLoc="./imgs/miles/" onClick="toggleModal(this)">
-                 
-                    <div class="techWrapper">
-                
-                        <img src="./imgs/Node.png" alt="Node" class="techImg">
-                        <img src="./imgs/ResponsiveDesign.png" alt="ResponsiveDesign" class="techImg">
-                        <img src="./imgs/api.png" alt="Custom API Development" class="techImg">
-                        <img src="./imgs/jquery.png" alt="jQuery" class="techImg">
-                        <br>
-                        <img src="./imgs/JavaScript.png" alt="JavaScript" class="techImg">
-                        <img src="./imgs/HTML5.png" alt="HTML5" class="techImg">
-                        <img src="./imgs/CSS3.png" alt="CSS3" class="techImg">
-                
-                    </div>   
-
-                </section>
-
-                <section class="inner projectTextWrapper">        
-                
-                    <h2>MyMiles</h2>
-
-                    <p>Need to track the mileage you drive in your vehicle?</p>
-                    <p>Use this app to quickly & securely save a mileage log. Logs can be saved, viewed, and exported to CSV, PDF, or a word document.</p>
-
-                    <div class="linksWrapper">
-            
-                        <a href="https://tranquil-sierra-12911.herokuapp.com/" target="_blank" class="buttonLink">
-                            See the site!
-                        </a>
-                
-                        <a href="https://github.com/imagineLife/myMiles" target="_blank">
-                            <img src="./imgs/github.png" class="linkImg">
-                            See the code!
-                        </a> 
-            
-                    </div>
-
-                </section>
-
+            <div class="col-3-4 hover-v2">
+               <div 
+                  class="box rhode-island-bg"
+                  href="https://imaginelife.github.io/ristats/"
+                  target="_blank">
+                  <div 
+                     class="caption">
+                     <p>R.I Stats</p>
+                     <hr />
+                     <p class="sub-text">Review Poverty & Income levels in Rhode Island through simple charts & maps.</p>
+                     <div class="link-box">
+                        <a href="https://imaginelife.github.io/ristats/" target="_blank"class="open"></a>
+                        <a href="https://github.com/imagineLife/ristats" target="_blank"class="git"></a>
+                     </div>
+                     <ul>
+                        <li>D3</li>
+                        <li>Mapping</li>
+                        <li>GeoJSON <i>(topJSON)</i></li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Data Visualization</li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-
-    <!-- jazzQuiz -->
-
-          <!--   <div id="jazz-quiz" class="project">
-               
-                <section class="inner projectImgWrapper" style="background-image: url(./imgs/jazzQuiz/1.jpg); background-size: cover;" data-imageLoc="./imgs/jazzQuiz/" onClick="toggleModal(this)">
-
-                    <div class="techWrapper">
-                
-                        <img src="./imgs/ResponsiveDesign.png" alt="ResponsiveDesign" class="techImg">
-                        <img src="./imgs/jquery.png" alt="jQuery" class="techImg">
-                        <img src="./imgs/JavaScript.png" alt="JavaScript" class="techImg">
-                        <br>
-                        <img src="./imgs/HTML5.png" alt="HTML5" class="techImg">
-                        <img src="./imgs/CSS3.png" alt="CSS3" class="techImg">
-                
-                    </div>           
-                
-                </section>
-
-                <section class="inner projectTextWrapper">
-
-                    <h2>Jazz Quizz</h2>
-
-                    <p>Test your jazz trivia with this JazzQuiz app!</p>
-
-
-                    <div class="linksWrapper">
-                
-                        <a href="https://imaginelife.github.io/quizApp/" target="_blank">
-                            <img src="./imgs/live.gif" class="linkImg">
-                            See the site!
-                        </a>
-                
-                        <a href="https://github.com/imagineLife/quizApp" target="_blank">
-                            <img src="./imgs/github.png" class="linkImg">
-                            See the code!
-                        </a> 
-                
-                    </div>
-
-                </section>
-
-            </div>  -->
-        </section>
-
-<!-- Skillset -->
-
-        <section id="skillset">
-
-                <h1 class="headerH1">Skillset</h1>
-
-            <div class="stackWrapper">
-                    
-                <div class="skillWrapper">
-                    <img src="./imgs/mongoDB.png" alt="MongoDB">
-                    <h3>MongoDB</h3>
-                </div>
-
-                <div class="skillWrapper">
-                    <img src="./imgs/ExpressJS.png" alt="ExpressJS">
-                    <h3>ExpressJS</h3>
-                </div>
-
-                <div class="skillWrapper">
-                    <img src="./imgs/React.png" alt="React.js">
-                    <h3>React.js</h3>
-                </div>
-
-                <div class="skillWrapper">
-                    <img src="./imgs/redux.png" alt="Redux">
-                    <h3>Redux</h3>
-                </div>
-
-                <div class="skillWrapper">
-                    <img src="./imgs/Node.png" alt="Node.js">
-                    <h3>Node.js</h3>
-                </div>
-
+            <div class="col-3-4 hover-v2">
+               <div 
+               class="box housing-permits-bg">
+                  <div class="caption">
+                     <p>CT Housing Permits, Mapped</p>
+                     <hr />
+                     <p class="sub-text">An interactive choropleth mapping project, representing the range of housing permits issued per town in Connecticut in 2018.</p>
+                     <div class="link-box">
+                        <a href="https://imaginelife.github.io/stateHousingPermits/" target="_blank"class="open"></a>
+                        <a href="https://github.com/imagineLife/stateHousingPermits" target="_blank"class="git"></a>
+                     </div>
+                     <ul>
+                        <li>D3</li>
+                        <li>Mapping</li>
+                        <li>Responsive Design</li>
+                        <li>Data Visualization</li>
+                        <li>JS</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-
-            <div class="stackWrapper">
-
-                <div class="skillWrapper">
-                    <img src="./imgs/linux.png" alt="Linux">
-                    <h3>Linux</h3>
-                </div>
-
-                <div class="skillWrapper">
-                    <img src="./imgs/apache.png" alt="apache">
-                    <h3>Apache</h3>
-                </div>
-
-                <div class="skillWrapper">
-                    <img src="./imgs/MySQL.png" alt="MySQL">
-                    <h3>MySQL</h3>
-                </div>
-
-                <div class="skillWrapper">
-                    <img src="./imgs/php.png" alt="PHP">
-                    <h3>PHP</h3>
-                </div>
-
-                <div class="skillWrapper">
-                    <img src="./imgs/DHTMLX.jpg" alt="DHTMLX">
-                    <h3>DHTMLX</h3>
-                </div>
-
+            <div class="col-3-4 hover-v2">
+               <div class="box erp-bg">
+                  <div class="caption">
+                     <p>Enterprise Resource Planner</p>
+                     <hr />
+                     <p class="sub-text">A time-tracking, ticket-based, resource management system. <br>
+                     <i>I do not own the code to this project.</i></p>
+                     <ul>
+                        <li>DHTMLX</li>
+                        <li>JS</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>PHP</li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-
-            <div class="stackWrapper">
-                
-                <div class="skillWrapper">
-                    <img src="./imgs/D3js.png" alt="D3.js">
-                    <h3>D3.js</h3>
-                </div>
-
-                <div class="skillWrapper">
-                    <img src="./imgs/api.png" alt="API Development">
-                    <h3>API Development & Integration</h3>
-                </div>
-
-                <div class="skillWrapper">
-                    <img src="./imgs/jquery.png" alt="jQuery">
-                    <h3>jQuery</h3>
-                </div>
-
-                <div class="skillWrapper">
-                    <img src="./imgs/JavaScript.png" alt="JavaScript">
-                    <h3>JavaScript</h3>
-                </div>
-
-                <div class="skillWrapper">
-                    <img src="./imgs/CSS3.png" alt="CSS3">
-                    <h3>CSS3</h3>
-                </div>
-
-                <div class="skillWrapper">
-                    <img src="./imgs/HTML5.png" alt="HTML5">
-                    <h3>HTML5</h3>
-                </div>
-
+            <div class="col-3-4 hover-v2">
+               <div class="box my-miles-bg">
+                  <div class="caption">
+                     <p>MyMiles</p>
+                     <hr />
+                     <p class="sub-text">Record, edit & export vehicle mileage logs in this responsive app.</p>
+                     <div class="link-box">
+                        <a href="https://tranquil-sierra-12911.herokuapp.com/" target="_blank"class="open"></a>
+                        <a href="https://github.com/imagineLife/myMiles" target="_blank"class="git"></a>
+                     </div>
+                     <ul>
+                        <li>API</li>
+                        <li>Responsive Design</li>
+                        <li>JS</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-
-
-            <div class="stackWrapper">
-
-                <div class="skillWrapper">
-                    <img src="./imgs/mocha.png" alt="mocha">
-                    <h3>Mocha</h3>
-                </div>
-
-                <div class="skillWrapper">
-                    <img src="./imgs/chai.png" alt="chai">
-                    <h3>Chai</h3>
-                </div>
-
-                <div class="skillWrapper">
-                    <img src="./imgs/jest.png" alt="Jest">
-                    <h3>Jest</h3>
-                </div>
-                
-                <div class="skillWrapper">
-                    <img src="./imgs/Enzyme.ico" alt="Enzyme">
-                    <h3>Enzyme</h3>
-                </div>
-
+            <div class="col-3-4 hover-v2">
+               <div class="box macro-recipes-bg">
+                  <div class="caption">
+                     <p>MacroRecipes</p>
+                     <hr />
+                     <p class="sub-text">Find Recipes based on ingredients and gram counts of carbs, calories, fat, and protein.</p>
+                     <div class="link-box">
+                        <a href="https://imaginelife.github.io/MacroRecipes/" target="_blank"class="open"></a>
+                        <a href="https://github.com/imagineLife/MacroRecipes" target="_blank"class="git"></a>
+                     </div>
+                     <ul>
+                        <li>API</li>
+                        <li>Responsive Design</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                        <li>JS</li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-
-            <div class="stackWrapper">
-                
-                <div class="skillWrapper">
-                    <img src="./imgs/ResponsiveDesign.png" alt="ResponsiveDesign.js">
-                    <h3>Responsive Design</h3>
-                </div>
-
-                <div class="skillWrapper">
-                    <img src="./imgs/github.png" alt="GitHub">
-                    <h3>GitHub</h3>
-                </div>
-
-                <div class="skillWrapper">
-                    <img src="./imgs/netlify.jpg" alt="Netlify">
-                    <h3>Netlify</h3>
-                </div>
-
-                <div class="skillWrapper">
-                    <img src="./imgs/heroku.ico" alt="Heroku">
-                    <h3>Heroku</h3>
-                </div>
-
-                <div class="skillWrapper">
-                    <img src="./imgs/mlab.png" alt="mLab">
-                    <h3>mLab</h3>
-                </div>
-
-            </div>
-            
-                <h1 class="headerH1">About Me</h1>
-
-            <p class="aboutText">Currently I'm enjoying creating with React, Node, Express, Mongo & D3. I love the nature of learning and I like keeping up on the continuously developing landscape in web technologies.</p>
-            
-            <p class="aboutText">When I'm not in front of my laptop I'm often baking, hanging with my wife, Dena, talking sociology, psychology, & theology with friends, or trying to find the tastiest southeast Asian food nearby. I also enjoy playing guitar, too.</p>
-        </section>
-
-<!-- Contact -->
-
-        <section id="contact">
-            
-            <h1>Hire Me, Contact info:</h1>
-            
-            <div class="contactTextWrapper">
-                <a href="mailto:ericjlaursen@gmail.com?Subject=I Checked out your Porfolio">
-                    <img src="./imgs/email.png" class="contactLink">
-                    Email me
-                </a>
-                <p class="contactText">at ericjlaursen@gmail.com.</p>
-            </div>
-            
-            <div class="contactTextWrapper">
-                <a href="https://github.com/imagineLife/" target="_blank">
-                    <img src="./imgs/github.png" class="contactLink">
-                    My Github
-                </a>
-                <p class="contactText">is at https://github.com/imagineLife/.</p>
-            </div>
-
-        </section>
-
-<!-- Lightbox / Modal -->
-
-        <div id ="modal">
-
-            <button class='modalButton left' onClick='moveImage("left")'> &lt; </button>
-            
-            <table>
-                <tr>
-                    <td class="modalTableCell">
-                    </td>
-                </tr>     
-            </table>
-            
-            <button class='modalButton right' onClick='moveImage("right")'> &gt; </button>
-
-            <button class="modalButton closeModal" onClick="toggleModal()">Close</button>
-        </div>
-
-    </main>
-    <script type="text/javascript" src="index.js"></script>
-</body>
+         </section>
+      </main>
+   </body>
 </html>

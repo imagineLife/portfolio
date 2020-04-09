@@ -1,0 +1,173 @@
+/*
+  BROKEN slow-zooming bg
+*/
+/*div.hover-v2 > a:hover{
+  background-size: 200%;
+  transition: background-size 13s ease-in;
+  -moz-transition: background-size 13s ease-in;
+  -ms-transition: background-size 13s ease-in;
+  -o-transition: background-size 13s ease-in;
+  -webkit-transition: background-size 13s ease-in;
+}*/
+
+.hover-v2 .box .caption{ 
+  border-radius: 0 0 23px 23px;
+  height: 100%;
+}
+
+.hover-v2 .box .caption{ 
+  background-color: rgba(0,0,0,.7);
+}
+
+/* > * is 'only 1 level below'*/
+.hover-v2 .caption > *{
+  transition: all;
+  transition-duration: .3s;
+  opacity: 1;
+}
+
+.box .caption p:nth-child(1){
+  opacity: 1;
+}
+
+.box .caption > *{
+  opacity: 1;
+}
+
+.hover-v2 .caption p,
+.hover-v2 .caption hr,
+.hover-v2 .caption ul{
+  opacity: 0;
+}
+
+.caption p:nth-child(1) i{
+  font-size: .7em;
+}
+
+.hover-v2 .caption p:nth-child(1){
+  margin-top: 0;
+  color: rgb(87,185,221);
+  font-size: 1.1em;
+}
+
+hr{
+  color: rgb(87,185,221);
+  border: 2px solid rgb(87,185,221);
+}
+
+/*HR*/
+.box .caption hr{
+  opacity: 1;
+  width: 75%;
+  transition-delay: 0.1s;
+}
+
+/*sub-text*/
+.box .caption p.sub-text{
+  opacity: 1;
+}
+
+/*
+  Card Tech-list
+*/
+div.caption ul {
+  margin: 0 0 0 2.5%;
+  padding: 0;
+  position: absolute;
+  width: 90%;
+  bottom: 10px;
+}
+
+.box .caption ul {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: .2s;
+}
+
+div.caption li{
+  list-style-type: none;
+  font-size: 12px;
+  color: rgb(190,190,190);
+  display: inline;
+}
+
+div.caption li::after{
+  content: ' | ';
+}
+
+div.caption li:last-child::after{
+  content: '';
+}
+
+
+
+/*
+    Hover interaction @ bigger screens
+*/
+
+@media only screen and (min-width: 640px){
+  
+  /* caption */
+  .hover-v2 .box .caption{ 
+    background-color: unset;
+  }
+  .hover-v2 .box:hover .caption{ 
+    background-color: rgba(0,0,0,.8);
+  }
+
+  /* title */
+  .hover-v2 .caption p:nth-child(1){
+    transform: translateY(-10px);
+  }
+
+  .box .caption p:nth-child(1){
+    opacity: 0;
+  }
+
+  .box:hover .caption p:nth-child(1){
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+  }
+
+  .hover-v2 .caption hr{
+    opacity: 0;
+    width: 0%;
+    margin-left: 12.5%;
+  }
+
+  .box:hover .caption hr{
+    opacity: 1;
+    width: 75%;
+  }
+
+  .box .caption p.sub-text{
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  .box:hover .caption p.sub-text{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .box .caption ul {
+    opacity: 0;
+    transform: translateX(35px);
+  }
+
+  .box:hover .caption ul {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .box .caption a{
+    display: none;
+  }
+
+  .box:hover .caption a{
+    display: inline-block;
+    transition: all 150ms;
+    transition-delay: 150ms;
+  }
+}

@@ -177,10 +177,10 @@ div.psmi-bg{
 }
 
 .mastering-bg{
-  background: center / auto no-repeat url('./imgs/D3.png');
+  background: center / auto no-repeat url('./imgs/d3Course.gif');
 }
 .slice-n-dice-bg{
-  background: center / auto no-repeat url('./imgs/slice.jpeg');
+  background: center / auto no-repeat url('./imgs/slice.gif');
 }
 .pizza-bg{
   background: center / auto no-repeat url('./imgs/nodeServer.jpg');
@@ -189,13 +189,13 @@ div.psmi-bg{
   background: center / auto no-repeat url('./imgs/say-what/1.jpg');
 }
 .world-map-bg{
-  background: center / auto no-repeat url('./imgs/worldmap/1.jpg');
+  background: center / auto no-repeat url('./imgs/worldmap.gif');
 }
 .rhode-island-bg{
   background: center / auto no-repeat url('./imgs/ristats/1.jpg');
 }
 .housing-permits-bg{
-  background: center / auto no-repeat url('./imgs/ctPermits/1.jpg');
+  background: center / auto no-repeat url('./imgs/ctTowns.gif');
 }
 .erp-bg{
   background: center / auto no-repeat url('./imgs/erp/1.jpg');

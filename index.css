@@ -2,8 +2,8 @@
   --baby-blue: rgb(87,185,221);
 };*/
 
-body{
-  background-color: rgb(15,31,50);
+body {
+  background-color: rgb(15, 31, 50);
   margin: 0;
 }
 
@@ -12,11 +12,11 @@ main {
   /*width: 90%;*/
 }
 
-#projects-wrapper{
+#projects-wrapper {
   padding: 0 5%;
 }
 
-h1{
+h1 {
   font-size: 2em;
   margin: 0;
   padding: 0.67em 0;
@@ -27,7 +27,7 @@ h1{
   NAV
 */
 * {
-  font-family: sans-serif
+  font-family: sans-serif;
 }
 nav {
   background: black;
@@ -40,15 +40,15 @@ nav {
   padding: 0;
   z-index: 10;
   height: 45px;
-  line-height: 45px; 
+  line-height: 45px;
 }
 nav ul {
   margin: 0;
   padding: 0;
-  display: block; 
+  display: block;
 }
 nav ul a {
-  color: white; 
+  color: white;
 }
 nav ul li {
   margin: 0 auto;
@@ -56,14 +56,14 @@ nav ul li {
   display: inline-block;
   width: 32%;
   text-align: center;
-  line-height: 45px; 
+  line-height: 45px;
 }
 
 /*Nav buttons*/
 .navButton {
   color: white;
   background-color: transparent;
-  border: none; 
+  border: none;
 }
 
 .box {
@@ -71,7 +71,7 @@ nav ul li {
   margin-bottom: 20px;
 }
 
-div.box{
+div.box {
   background-size: cover;
   display: block;
   border-radius: 0 0 25px 25px;
@@ -80,19 +80,19 @@ div.box{
   padding: 0;
 }
 
-div.box img{
+div.box img {
   max-width: 100%;
   margin-bottom: -3px;
   border-radius: 0 0 25px 25px;
 }
 
-.col-4 div a{
+.col-4 div a {
   max-width: 100%;
 }
 
-section.welcome{
+section.welcome {
   color: white;
-  background-image: url('./imgs/page/welcome.jpg');
+  background-image: url("./imgs/page/welcome.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: inherit;
@@ -102,18 +102,18 @@ section.welcome{
   margin-bottom: 50px;
 }
 
-section.welcome *{
+section.welcome * {
   max-width: unset;
 }
 
-.text-box{
+.text-box {
   position: absolute;
   top: 15px;
   padding: 15px;
   color: black;
 }
 
-.intro-text{
+.intro-text {
   line-height: 1.25;
 }
 
@@ -121,19 +121,19 @@ section.welcome *{
   font-size: 2.5em;
 }
 
-.intro-text i{
+.intro-text i {
   font-style: italic;
-  font-size: .85em;
+  font-size: 0.85em;
 }
 
-.tech-list-box{
+.tech-list-box {
   padding: 10px 15px;
   margin: 60px 0 0 0;
-  background-color: rgba(0,0,0,.8);
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 5px;
 }
 
-.tech-list{
+.tech-list {
   color: black;
   color: lightgrey;
   font-size: 14px;
@@ -143,71 +143,71 @@ section.welcome *{
   padding: 0;
 }
 
-.tech-li{
+.tech-li {
   display: inline-block;
 }
 
-.tech-li i{
+.tech-li i {
   font-style: italic;
 }
 
-.tech-li.title{
+.tech-li.title {
   text-decoration: underline;
 }
 
-.tech-li::after{
-  content: ' | ';
+.tech-li::after {
+  content: " | ";
 }
 
-.tech-li:last-child::after{
-  content: '';
+.tech-li:last-child::after {
+  content: "";
 }
 
-.tech-li.title::after{
-  content: '';
+.tech-li.title::after {
+  content: "";
 }
 
 /*
   Box bg images
 */
 
-div.psmi-bg{
-  background-image: url('./imgs/psm.png');
+div.psmi-bg {
+  background-image: url("./imgs/psm.png");
   background-size: inherit;
 }
 
-.mastering-bg{
-  background: center / auto no-repeat url('./imgs/d3Course.gif');
+.mastering-bg {
+  background: center / auto no-repeat url("./imgs/d3Course.gif");
 }
-.slice-n-dice-bg{
-  background: center / auto no-repeat url('./imgs/slice.gif');
+.slice-n-dice-bg {
+  background: center / auto no-repeat url("./imgs/slice.gif");
 }
-.pizza-bg{
-  background: center / auto no-repeat url('./imgs/nodeServer.jpg');
+.pizza-bg {
+  background: center / auto no-repeat url("./imgs/nodeServer.jpg");
 }
-.say-what-bg{
-  background: center / auto no-repeat url('./imgs/say-what/1.jpg');
+.say-what-bg {
+  background: center / auto no-repeat url("./imgs/say-what/1.jpg");
 }
-.world-map-bg{
-  background: center / auto no-repeat url('./imgs/worldmap.gif');
+.world-map-bg {
+  background: center / auto no-repeat url("./imgs/worldmap.gif");
 }
-.rhode-island-bg{
-  background: center / auto no-repeat url('./imgs/ristats/1.jpg');
+.rhode-island-bg {
+  background: center / auto no-repeat url("./imgs/ristats/1.jpg");
 }
-.housing-permits-bg{
-  background: center / auto no-repeat url('./imgs/cttowns.gif');
+.housing-permits-bg {
+  background: center / auto no-repeat url("./imgs/cttowns.gif");
 }
-.erp-bg{
-  background: center / auto no-repeat url('./imgs/erp/1.jpg');
+.erp-bg {
+  background: center / auto no-repeat url("./imgs/erp/1.jpg");
 }
-.macro-recipes-bg{
-  background: center / auto no-repeat url('./imgs/macro/1.jpg');
+.macro-recipes-bg {
+  background: center / auto no-repeat url("./imgs/macro/1.jpg");
 }
-.my-miles-bg{
-  background: center / auto no-repeat url('./imgs/miles/1.jpg');
+.my-miles-bg {
+  background: center / auto no-repeat url("./imgs/miles/1.jpg");
 }
 
-.caption{
+.caption {
   text-align: left;
   color: white;
   padding: 20px 5px 5px 5px;
@@ -217,55 +217,30 @@ div.psmi-bg{
   position: relative;
 }
 
-.sub-text{
-  font-size: .7em;
+.sub-text {
+  font-size: 0.7em;
 }
 
-.sub-text.eye-pop{
-  font-size: .9em;
-}
-
-.black {
-  background-color: black;
-  color: white;
-}
-
-.green {
-  background-color: green;
-}
-
-.orange {
-  background-color: orange;
-}
-
-.blue {
-  background-color: blue;
-}
-
-div.box, div.caption, img.overlay{
-  transition: all 300ms;
-}
-
-p.overlay-text{
+p.overlay-text {
   opacity: 0;
   color: white;
 }
 
-div.box:hover p.overlay-text{
+div.box:hover p.overlay-text {
   opacity: 1;
 }
 
-.box .caption a{
+.box .caption a {
   display: inline-block;
   width: 35px;
   height: 35px;
   margin: 10px;
 }
 
-.box .caption a.open{
-  background: rgba(0,0,0,0) url(./imgs/open.png) center / 35px 35px;
+.box .caption a.open {
+  background: rgba(0, 0, 0, 0) url(./imgs/open.png) center / 35px 35px;
 }
 
-.box .caption a.git{
-  background: rgba(0,0,0,0) url(./imgs/github.png) center / 35px 35px;
+.box .caption a.git {
+  background: rgba(0, 0, 0, 0) url(./imgs/github.png) center / 35px 35px;
 }

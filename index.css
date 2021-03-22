@@ -175,12 +175,12 @@ section.welcome * {
 
 div.node-cert-bg {
   background-image: url("./imgs/node-cert.png");
-  background-size: inherit;
+  background-size: contain;
 }
 
 div.psmi-bg {
   background-image: url("./imgs/psm.png");
-  background-size: inherit;
+  background-size: contain;
 }
 
 .mastering-bg {
